@@ -1,0 +1,1130 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatap: <http://data.europa.eu/r5r> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gml: <http://www.opengis.net/gml/3.2> .
+@prefix geo: <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> .
+@prefix gnss: <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix odlr: <http://www.w3.org/ns/odrl/2/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3c.org/ns/prov> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap>
+  a owl:Ontology, adms:Asset ;
+  dct:title "GNSS_DCAT-AP: an extension of the DCAT Application Profile for GNSS observation data"@en ;
+  dct:description "The GNSS-DCAT Application aims at providing a commonly-agreed vocabulary for GNSS observation data as Open Data. GNSS-DCAT-AP defines a certain number of additions to the DCAT-AP model that can be used to describe GNSS data e.g. daily RINEX files"@en ;
+  dct:created "2022-02-22"^^xsd:date ;
+  dct:modified "2022-02-23"^^xsd:date ;
+  owl:versionInfo "0.1.0" ;
+  vann:preferredNamespacePrefix "gnss" ;
+  adms:versionNotes "Change log for GNSS-DCAT-AP v0.1: DCAT-AP v0.1 draft version uploaded as .docx, .pdf and .ttl and aligned with DCAT-AP v.2.1.0"@en ;
+  foaf:homepage <https://www.fair-gnss.oma.be/gnss-dcat-ap> ;
+  dct:publisher <https://www.fair-gnss.oma.be> ;
+  dct:creator <https://www.fair-gnss.oma.be> ;
+  dct:type <http://purl.org/adms/assettype/Ontology> ;
+  dct:status <http://purl.org/adms/status/UnderDevelopment> .
+
+
+#---------------------------->
+#----- Antenna Class ------>
+#---------------------------->
+
+#-- Class definition -->
+
+gnss:Antenna
+  a owl:Class ;
+  rdfs:comment "Recommended class. Domain specific vocabulary for the antenna associated with gnss:Station"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "Station antenna"@en  .
+
+#-- Properties definition -->
+
+gnss:igsModelCode
+  a owl:Property ;
+  rdfs:comment "Mandatory property. Antenna and radome name (e.g. TRM57971.00 	NONE)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "Antenna - IGS model code"@en ;
+  rdfs:domain gnss:Antenna ;
+  rdfs:range rdfs:Literal .
+
+gnss:gnss:marker-arpEastEcc
+  a owl:Property ;
+  rdfs:comment "Recommended property. Distance from the ARP  to the marker - East component"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "Antenna - marker-ARP East Ecc."@en ;
+  rdfs:domain gnss:Antenna ;
+  rdfs:range rdfs:Literal .
+
+gnss:gnss:marker-arpNorthEcc
+  a owl:Property ;
+  rdfs:comment "Recommended property. Distance from the ARP  to the marker - North component"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "Antenna - marker-ARP North Ecc."@en ;
+  rdfs:domain gnss:Antenna ;
+  rdfs:range xsd:float .
+
+gnss:gnss:marker-arpUpEcc
+  a owl:Property ;
+  rdfs:comment "Recommended property. Distance from the ARP  to the marker - Up component"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "Antenna - marker-ARP Up Ecc."@en ;
+  rdfs:domain gnss:Antenna ;
+  rdfs:range xsd:float .
+
+gnss:marker-arpUpEcc
+  a owl:Property ;
+  rdfs:comment "Recommended property. Antenna and radome name (e.g. TRM57971.00 	NONE)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "Antenna - marker-ARP Up Ecc."@en ;
+  rdfs:domain gnss:Antenna ;
+  rdfs:range xsd:float .
+
+gnss:manufacturerSerialNumber
+  a owl:Property ;
+  rdfs:comment "Optional property. Serial number of the antenna"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "Antenna - manufacturer serial number"@en ;
+  rdfs:domain gnss:Antenna ;
+  rdfs:range rdfs:Literal .
+
+
+#---------------------------->
+#-----  GNSS observation data	Class ------>
+#---------------------------->
+
+#-- Class definition -->
+
+gnss:OBSData
+  a owl:Class ;
+  rdfs:comment "Recommended class. Domain specific vocabulary for RINEX observation files"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "GNSS observation data"@en  .
+
+#-- Properties definition -->
+
+gnss:station
+  a owl:Property ;
+  rdfs:comment "Mandatory property. Station description"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "GNSS obs data - station"@en ;
+  rdfs:domain gnss:OBSData ;
+  rdfs:range gnss:Station .
+
+gnss:format
+  a owl:Property ;
+  rdfs:comment "Recommended property. RINEX 2  / RINEX 3/ RINEX 4"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "GNSS obs data - format"@en ;
+  rdfs:domain gnss:OBSData ;
+  rdfs:range rdfs:Literal .
+
+gnss:obsHeader
+  a owl:Property ;
+  rdfs:comment "Recommended property. Metadata for the RINEX header"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "GNSS obs data - header"@en ;
+  rdfs:domain gnss:OBSData ;
+  rdfs:range gnss:OBSHeader .
+
+gnss:frequency
+  a owl:Property ;
+  rdfs:comment "Optional property. Daily/hourly RINEX files"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "GNSS obs data  - frequency"@en ;
+  rdfs:domain gnss:OBSData ;
+  rdfs:range dct:Frequency .
+
+gnss:compressFormat
+  a owl:Property ;
+  rdfs:comment "Optional property. CRX compressed RINEX file (CRX RINEX)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "GNSS obs data  - compression format"@en ;
+  rdfs:domain gnss:OBSData ;
+  rdfs:range xsd:boolean .
+
+gnss:compressFormatType
+  a owl:Property ;
+  rdfs:comment "Optional property. Crinex Version (e.g. 3.0)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "GNSS obs data  - compression format type"@en ;
+  rdfs:domain gnss:OBSData ;
+  rdfs:range rdfs:Literal .
+
+
+#---------------------------->
+#-----  GNSS observation data header Class ------>
+#---------------------------->
+
+#-- Class definition -->
+
+gnss:OBSHeader
+  a owl:Class ;
+  rdfs:comment "Recommended class. Domain specific vocabulary for the information in the RINEX observation file header associated with gnss:OBSData"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "GNSS observation data header"@en  .
+
+#-- Properties definition -->
+
+gnss:antenna
+  a owl:Property ;
+  rdfs:comment "Recommended property. Antenna information from the RINEX header"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "GNSS obs header - antenna"@en ;
+  rdfs:domain gnss:OBSHeader ;
+  rdfs:range gnss:Antenna .
+
+gnss:interval
+  a owl:Property ;
+  rdfs:comment "Recommended property. 30 sec / 15 sec/1 sec"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "GNSS obs header - interval"@en ;
+  rdfs:domain gnss:OBSHeader ;
+  rdfs:range dct:Frequency .
+
+gnss:receiver
+  a owl:Property ;
+  rdfs:comment "Recommended property. Receiver information from the RINEX header"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "GNSS obs header - receiver as in OBSHeader"@en ;
+  rdfs:domain gnss:OBSHeader ;
+  rdfs:range gnss:Receiver .
+
+gnss:issued
+  a owl:Property ;
+  rdfs:comment "Recommended property. Publication date of the header"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "GNSS obs header - issued date"@en ;
+  rdfs:domain gnss:OBSHeader ;
+  rdfs:range xsd:date .
+
+gnss:temporal
+  a owl:Property ;
+  rdfs:comment "Recommended property. Temporal coverage from the RINEX header (start time/date-end time/date)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "GNSS obs header - temporal coverage"@en ;
+  rdfs:domain gnss:OBSHeader ;
+  rdfs:range dct:PeriodOfTime .
+
+gnss:agency
+  a owl:Property ;
+  rdfs:comment "Optional property. Agency as in the RINEX header (e.g., ROB)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "GNSS obs header - agency"@en ;
+  rdfs:domain gnss:OBSHeader ;
+  rdfs:range rdfs:Literal .
+
+gnss:isVersionOf
+  a owl:Property ;
+  rdfs:comment "Optional property. Related gnss:OBSHeader of which the described header is a version, edition or adaptation"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "GNSS obs header - version of GNSS obs header"@en ;
+  rdfs:domain gnss:OBSHeader ;
+  rdfs:range gnss:OBSHeader .
+
+gnss:markerName
+  a owl:Property ;
+  rdfs:comment "Optional property. Marker name in the RINEX header (4-char/9-char id)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "GNSS obs header -  marker name"@en ;
+  rdfs:domain gnss:OBSHeader ;
+  rdfs:range rdfs:Literal .
+
+gnss:markerNumber
+  a owl:Property ;
+  rdfs:comment "Optional property. DOMES number"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "GNSS obs header - marker number"@en ;
+  rdfs:domain gnss:OBSHeader ;
+  rdfs:range rdfs:Literal .
+
+gnss:observer
+  a owl:Property ;
+  rdfs:comment "Optional property. Observer as in the RINEX header (e.g., John Smith)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "GNSS obs header - observer"@en ;
+  rdfs:domain gnss:OBSHeader ;
+  rdfs:range rdfs:Literal .
+
+gnss:pgm
+  a owl:Property ;
+  rdfs:comment "Optional property. Info regarding the software used to generate the file as from the RINEX header"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "GNSS obs header - pgm"@en ;
+  rdfs:domain gnss:OBSHeader ;
+  rdfs:range gnss:PGM .
+
+gnss:rinexVersion
+  a owl:Property ;
+  rdfs:comment "Optional property. 	RINEX sub-version (text e.g 3.04)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "GNSS obs header - RINEX sub-version"@en ;
+  rdfs:domain gnss:OBSHeader ;
+  rdfs:range rdfs:Literal .
+
+owl:versionInfo
+  a owl:Property ;
+  rdfs:comment "Optional property. Version number or other version designation of the RINEX Header"@en  ;
+  rdfs:isDefinedBy <http://www.w3.org/2002/07/owl#versionInfo> ;
+  rdfs:label "GNSS obs header - version info"@en ;
+  rdfs:domain gnss:OBSHeader ;
+  rdfs:range rdfs:Literal .
+
+adms:versionNotes
+  a owl:Property ;
+  rdfs:comment "Optional property. Description of the differences between current and a previous version of the RINEX header"@en  ;
+  rdfs:isDefinedBy <http://www.w3.org/ns/adms#versioNotes> ;
+  rdfs:label "GNSS obs header - version notes"@en ;
+  rdfs:domain gnss:OBSHeader ;
+  rdfs:range rdfs:Literal .
+
+
+#---------------------------->
+#-----  GNSS observation data generating software	Class ------>
+#---------------------------->
+
+#-- Class definition -->
+
+gnss:PGM
+  a owl:Class ;
+  rdfs:comment "Recommended class. Domain specific vocabulary for software used to generate the RINEX file associated with gnss:OBSData"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "GNSS observation data generating software"@en  .
+
+#-- Properties definition -->
+
+gnss:pgmName
+  a owl:Property ;
+  rdfs:comment "Mandatory property. Name of the software used to generate the RINEX file (e.g. Spider V7.1.1.7438 )"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "PGM - name"@en ;
+  rdfs:domain gnss:PGM ;
+  rdfs:range rdfs:Literal .
+
+gnss:pgmNotes
+  a owl:Property ;
+  rdfs:comment "Optional property. Comment (e.g. THIS RINEX FILE IS CREATED FROM LB2 DATA)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "PGM - notes"@en ;
+  rdfs:domain gnss:PGM ;
+  rdfs:range rdfs:Literal .
+
+gnss:pgmDate
+  a owl:Property ;
+  rdfs:comment "Optional property. PGM generation date as from the RINEX header"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "PGM - date"@en ;
+  rdfs:domain gnss:PGM ;
+  rdfs:range xsd:date .
+
+gnss:pgmRunBy
+  a owl:Property ;
+  rdfs:comment "Optional property. Name of the agency operating the software generating the RINEX file"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "PGM - operated by"@en ;
+  rdfs:domain gnss:PGM ;
+  rdfs:range rdfs:Literal .
+
+
+#---------------------------->
+#-----  GNSS station receiver	Class ------>
+#---------------------------->
+
+#-- Class definition -->
+
+gnss:Receiver
+  a owl:Class ;
+  rdfs:comment "Recommended class Domain specific vocabulary for the receiver associated with gnss:Station"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "Station receiver"@en  .
+
+#-- Properties definition -->
+
+gnss:igsModelCode
+  a owl:Property ;
+  rdfs:comment "Mandatory property. Receiver name (e.g. TRIMBLE NETR9)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "Receiver - IGS model code"@en ;
+  rdfs:domain gnss:Receiver ;
+  rdfs:range rdfs:Literal .
+
+gnss:firmwareVersion
+  a owl:Property ;
+  rdfs:comment "Recommended property. Firmware version (e.g. 5.37)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "Receiver - firmware version"@en ;
+  rdfs:domain gnss:Receiver ;
+  rdfs:range rdfs:Literal .
+
+gnss:manufacturerSerialNumber
+  a owl:Property ;
+  rdfs:comment "Optional property. Serial number for the receiver (e.g. 5608R50231)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "Receiver - manufacturer serial number"@en ;
+  rdfs:domain gnss:Receiver ;
+  rdfs:range rdfs:Literal .
+
+
+#---------------------------->
+#-----  GNSS station Class ------>
+#---------------------------->
+
+#-- Class definition -->
+
+gnss:Station
+  a owl:Class ;
+  rdfs:comment "Recommended class. Domain specific vocabulary for station information"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "Station"@en  .
+
+#-- Properties definition -->
+
+gnss:nineCharacterID
+  a owl:Property ;
+  rdfs:comment "Mandatory property. 9-char id of the station"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "Station - nine char id"@en ;
+  rdfs:domain gnss:Station ;
+  rdfs:range rdfs:Literal .
+
+gnss:monument
+  a owl:Property ;
+  rdfs:comment "Recommended property. Station monument"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "Station -monument"@en ;
+  rdfs:domain gnss:Station ;
+  rdfs:range geo:Monument .
+
+gnss:antenna
+  a owl:Property ;
+  rdfs:comment "Optional property. Station antenna from GeodesyML"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "Station -antenna"@en ;
+  rdfs:domain gnss:Station ;
+  rdfs:range geo:Antenna .
+
+gnss:geodesyml
+  a owl:Property ;
+  rdfs:comment "Optional property. URL resource for the GeodesyML file"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "Station -geodesyML file"@en ;
+  rdfs:domain gnss:Station ;
+  rdfs:range dcat:Distribution .
+
+gnss:receiver
+  a owl:Property ;
+  rdfs:comment "Optional property. Station receiver from GeodesyML"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "Station -receiver"@en ;
+  rdfs:domain gnss:Station ;
+  rdfs:range geo:Receiver .
+
+gnss:stationDOI
+  a owl:Property ;
+  rdfs:comment "Optional property. Station identifier (e.g. MAST/ADS, DataCite, DOI, EZID or W3ID)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "Station - DOI"@en ;
+  rdfs:domain gnss:Station ;
+  rdfs:range adms:Identifier .
+
+gnss:sitelog
+  a owl:Property ;
+  rdfs:comment "Optional property. URL resource for the sitelog file"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "Station - sitelog"@en ;
+  rdfs:domain gnss:Station ;
+  rdfs:range dcat:Distribution .
+
+
+#---------------------------->
+#-----  GNSS station antenna from GeodesyML Class ------>
+#---------------------------->
+
+#-- Class definition -->
+
+geo:GNSSAntenna
+  a owl:Class ;
+  rdfs:comment "Optional class. Antenna info from GeodesyML installed on gnss:temporal (associated with gnss:Station)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Antenna from GeodesyML"@en  .
+
+#-- Properties definition -->
+
+gnss:igsModelCode
+  a owl:Property ;
+  rdfs:comment "Mandatory property. 	Antenna name (e.g. TRM57971.00 	NONE)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "Antenna from GeodesyML - IGS model code"@en ;
+  rdfs:domain geo:GNSSAntenna ;
+  rdfs:range rdfs:Literal .
+
+geo:marker-arpEastEcc
+  a owl:Property ;
+  rdfs:comment "Recommended property. Distance from the ARP to the marker - East component"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Antenna from GeodesyML - marker-ARP East Ecc."@en ;
+  rdfs:domain geo:Antenna ;
+  rdfs:range xsd:float .
+
+geo:marker-arpNorthEcc
+  a owl:Property ;
+  rdfs:comment "Recommended property. Distance from the ARP to the marker - North component"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Antenna from GeodesyML - marker-ARP North Ecc."@en ;
+  rdfs:domain geo:Antenna ;
+  rdfs:range xsd:float .
+
+geo:marker-arpUptEcc
+  a owl:Property ;
+  rdfs:comment "Recommended property. Distance from the ARP to the marker - Up component"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Antenna from GeodesyML - marker-ARP Up Ecc."@en ;
+  rdfs:domain geo:Antenna ;
+  rdfs:range xsd:float .
+
+geo:alignmentFromTrueNorth
+  a owl:Property ;
+  rdfs:comment "Optional property. Alignment from true north"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Antenna from GeodesyML - alignment from true north"@en ;
+  rdfs:domain geo:Antenna ;
+  rdfs:range xsd:double .
+
+geo:antennaCableLength
+  a owl:Property ;
+  rdfs:comment "Optional property. Length of the antenna cable (e.g. 70.0)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Antenna from GeodesyML - antenna cable length"@en ;
+  rdfs:domain geo:Antenna ;
+  rdfs:range xsd:double .
+
+geo:antennaCableType
+  a owl:Property ;
+  rdfs:comment "Optional property. Type of cable of the antenna (e.g. CNT-400 50 Ohm)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Antenna from GeodesyML - antenna cable type"@en ;
+  rdfs:domain geo:Antenna ;
+  rdfs:range rdfs:Literal .
+
+geo:antennaReferencePoint
+  a owl:Property ;
+  rdfs:comment "Optional property. ARP type (e.g. BPA)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Antenna from GeodesyML - antenna reference point"@en ;
+  rdfs:domain geo:Antenna ;
+  rdfs:range gml:CodeType .
+
+geo:antennaRadomeType
+  a owl:Property ;
+  rdfs:comment "Optional property. Radome Type (e.g. : NONE)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Antenna from GeodesyML - antenna radome type"@en ;
+  rdfs:domain geo:Antenna ;
+  rdfs:range geo:igsRadomeModelCodeType .
+
+geo:dateInstalled
+  a owl:Property ;
+  rdfs:comment "Optional property. Installation date (e.g. 2009-08-05T02:00:00Z)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Antenna from GeodesyML - date installed"@en ;
+  rdfs:domain geo:Antenna ;
+  rdfs:range gml:TimePositionType .
+
+geo:dateRemoved
+  a owl:Property ;
+  rdfs:comment "Optional property. Removal date (e.g. 2010-05-03T01:30:00Z)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Antenna from GeodesyML - igsModelCode"@en ;
+  rdfs:domain geo:Antenna ;
+  rdfs:range gml:TimePositionType .
+
+geo:manufacturerSerialNumber
+  a owl:Property ;
+  rdfs:comment "Optional property. Serial number for the antenna (e.g. 103320)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Antenna from GeodesyML - manufacturer serial number"@en ;
+  rdfs:domain geo:Antenna ;
+  rdfs:range rdfs:Literal .
+
+geo:radomeSerialNumber
+  a owl:Property ;
+  rdfs:comment "Optional property. Serial number of the radome (e.g. N/A)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Antenna from GeodesyML - radome serial number"@en ;
+  rdfs:domain geo:Antenna ;
+  rdfs:range rdfs:Literal .
+
+
+#---------------------------->
+#-----  GNSS station monument from GeodesyML Class ------>
+#---------------------------->
+
+#-- Class definition -->
+
+geo:Monument
+  a owl:Class ;
+  rdfs:comment "Optional class.	Monument info from GeodesyML (associated with gnss:Station)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML"@en  .
+
+#-- Properties definition -->
+
+geo:name
+  a owl:Property ;
+  rdfs:comment "Mandatory property. GNSS site names, (e.g. 4-char id, site-name, iers-DOMES, cdp-number)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML - site name"@en ;
+  rdfs:domain geo:Monument ;
+  rdfs:range gml:CodeType .
+
+geo:installedDate
+  a owl:Property ;
+  rdfs:comment "Recommended property. Station installation date (e.g. 2002-09-15Z)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML - installed date"@en ;
+  rdfs:domain geo:Monument ;
+  rdfs:range gml:TimePositionType .
+
+geo:bedrockCondition
+  a owl:Property ;
+  rdfs:comment "Optional property. Bedrock conditions (e.g., FRESH)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML - bedrock condition"@en ;
+  rdfs:domain geo:Monument ;
+  rdfs:range rdfs:Literal .
+
+geo:bedrockType
+  a owl:Property ;
+  rdfs:comment "Optional property. Bedrock Type (e.g. SEDIMENTARY)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML - bedrock type"@en ;
+  rdfs:domain geo:Monument ;
+  rdfs:range rdfs:Literal .
+
+geo:description
+  a owl:Property ;
+  rdfs:comment "Optional property. Site description"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML - site description"@en ;
+  rdfs:domain geo:Monument ;
+  rdfs:range rdfs:Literal .
+
+gnss:faultZonesNearby
+  a owl:Property ;
+  rdfs:comment "Optional property. Fault zones nearby (e.g. NO)"@en  ;
+  rdfs:isDefinedBy <https://www.geo.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "Monument from GeodesyML - fault zones nearby"@en ;
+  rdfs:domain geo:Monument ;
+  rdfs:range rdfs:Literal .
+
+geo:foundation
+  a owl:Property ;
+  rdfs:comment "Optional property. Monument foundation (e.g. CONCRETE BLOCK)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML - monument foundation"@en ;
+  rdfs:domain geo:Monument ;
+  rdfs:range gml:CodeType .
+
+geo:foundationDepth
+  a owl:Property ;
+  rdfs:comment "Optional property. Depth of monument foundation (e.g. : 3 m)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML - monument foundation depth"@en ;
+  rdfs:domain geo:Monument ;
+  rdfs:range xsd:double .
+
+geo:fractureSpacing
+  a owl:Property ;
+  rdfs:comment "Optional property. Fracture spacing (e.g. 0 cm)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML - fracture spacing"@en ;
+  rdfs:domain geo:Monument ;
+  rdfs:range xsd:double .
+
+geo:geologicCharacteristic
+  a owl:Property ;
+  rdfs:comment "Optional property. Geologic characteristic (e.g. SAND)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML - geologic characteristic"@en ;
+  rdfs:domain geo:Monument ;
+  rdfs:range rdfs:Literal .
+
+geo:height
+  a owl:Property ;
+  rdfs:comment "Optional property. Height of the monument (e.g. 8 m)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML - monument height"@en ;
+  rdfs:domain geo:Monument ;
+  rdfs:range xsd:double .
+
+geo:markerDescription
+  a owl:Property ;
+  rdfs:comment "Optional property. Marker description (e.g. CENTER OF HOLE IN STEEL PLATE)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML - marker description"@en ;
+  rdfs:domain geo:Monument ;
+  rdfs:range gml:TimePositionType .
+
+geo:monumentDescription
+  a owl:Property ;
+  rdfs:comment "Optional property. Monument description (e.g. STEEL MAST)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML - monument description"@en ;
+  rdfs:domain geo:Monument ;
+  rdfs:range rdfs:Literal .
+
+geo:notes
+  a owl:Property ;
+  rdfs:comment "Optional property. Additional information"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML - notes"@en ;
+  rdfs:domain geo:Monument ;
+  rdfs:range rdfs:Literal .
+
+geo:type
+  a owl:Property ;
+  rdfs:comment "Optional property. Monument type (e.g. CORS)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML - monument type"@en ;
+  rdfs:domain geo:Monument ;
+  rdfs:range rdfs:Literal .
+
+
+#---------------------------->
+#-----  GNSS station receiver from GeodesyML Class ------>
+#---------------------------->
+
+#-- Class definition -->
+
+geo:GNSSReceiver
+  a owl:Class ;
+  rdfs:comment "Optional class. Receiver info from GeodesyML installed on gnss:temporal (associated with gnss:Station)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Receiver from GeodesyML"@en  .
+
+#-- Properties definition -->
+
+geo:igsModelCode
+  a owl:Property ;
+  rdfs:comment "Mandatory property. Receiver name (e.g.TRIMBLE NETR9)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Receiver from GeodesyML - name"@en ;
+  rdfs:domain geo:GNSSReceiver ;
+  rdfs:range rdfs:Literal .
+
+geo:firmwareVersion
+  a owl:Property ;
+  rdfs:comment "Recommended property. Firmware version (e.g. 5.37)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Receiver from GeodesyML - firmware version"@en ;
+  rdfs:domain geo:GNSSReceiver ;
+  rdfs:range rdfs:Literal .
+
+geo:dateInstalled
+  a owl:Property ;
+  rdfs:comment "Optional property. Receiver installation date e.g. 2020-05-01T00:00Z"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Receiver from GeodesyML - installation date"@en ;
+  rdfs:domain geo:GNSSReceiver ;
+  rdfs:range gml:TimePositionType .
+
+geo:dateRemoved
+  a owl:Property ;
+  rdfs:comment "Optional property. Receiver removal date e.g.2021-04-11T12:00Z"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Receiver from GeodesyML - removal date"@en ;
+  rdfs:domain geo:GNSSReceiver ;
+  rdfs:range gml:TimePositionType .
+
+geo:elevationCutoffSetting
+  a owl:Property ;
+  rdfs:comment "Optional property. Elevation cut off settings (e.g. 0)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Receiver from GeodesyML - elevation cutoff setting"@en ;
+  rdfs:domain geo:GNSSReceiver ;
+  rdfs:range xsd:double .
+
+geo:manufacturerSerialNumber
+  a owl:Property ;
+  rdfs:comment "Optional property. Serial number for the receiver (e.g. 5608R50231)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Receiver from GeodesyML - manufacturer serial number"@en ;
+  rdfs:domain geo:GNSSReceiver ;
+  rdfs:range rdfs:Literal .
+
+geo:satelliteSystem
+  a owl:Property ;
+  rdfs:comment "Optional property. Satellite system (e.g GPS+GLO+GAL)"@en  ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Receiver from GeodesyML - satellite system"@en ;
+  rdfs:domain geo:GNSSReceiver ;
+  rdfs:range gml:CodeType .
+
+
+#---------------------------->
+#----- Catalogue Class ------>
+#---------------------------->
+
+#-- Class definition -->
+
+<http://www.w3.org/ns/dcat#Catalog> a rdfs:Class ;
+  rdfs:label "Catalogue"@en ;
+  vann:usageNote "Mandatory class. A catalogue or repository that hosts the Datasets being described."@en ;
+  rdfs:isDefinedBy "http://www.w3.org/TR/vocab-dcat-2/#Class:Catalog" .
+
+#-- Properties definition -->
+
+<http://purl.org/dc/terms/description> a rdf:Property ;
+  rdfs:label "Catalogue - description"@en ;
+  vann:usageNote "Mandatory property. This property contains a free-text account of the Catalogue. This property can be repeated for parallel language versions of the description."@en .
+
+<http://purl.org/dc/terms/publisher> a rdf:Property ;
+  rdfs:label "Catalogue - publisher"@en ;
+  vann:usageNote "Mandatory property. This property refers to an entity (organisation) responsible for making the Catalogue available."@en .
+
+<http://purl.org/dc/terms/title> a rdf:Property ;
+  rdfs:label "Catalogue - title"@en ;
+  vann:usageNote "Mandatory property. This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name."@en .
+
+<http://www.w3.org/ns/dcat#dataset> a rdf:Property ;
+  rdfs:label "Catalogue - dataset"@en ;
+  vann:usageNote "Recommended property. This property links the Catalogue with a Dataset that is part of the Catalogue."@en .
+
+<http://xmlns.com/foaf/0.1/homepage> a rdf:Property ;
+  rdfs:label "Catalogue - homepage"@en ;
+  vann:usageNote "Recommended property. This property refers to a web page that acts as the main page for the Catalogue."@en .
+
+<http://purl.org/dc/terms/language> a rdf:Property ;
+  rdfs:label "Catalogue - language"@en ;
+  vann:usageNote "Recommended property. This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the metadata is provided in multiple languages."@en .
+
+<http://purl.org/dc/terms/license> a rdf:Property ;
+  rdfs:label "Catalogue - licence"@en ;
+  vann:usageNote "Recommended property. This property refers to the licence under which the Catalogue can be used or reused."@en .
+
+<http://purl.org/dc/terms/issued> a rdf:Property ;
+  rdfs:label "Catalogue - release date"@en ;
+  vann:usageNote "Recommended property. This property contains the date of formal issuance (e.g., publication) of the Catalogue. This property should be defined as rdfs:Lideral typed as xsd:date or xsd:dateTime."@en .
+
+<http://www.w3.org/ns/dcat#service> a rdf:Property ;
+  rdfs:label "Data Catalogue - service"@en ;
+  vann:usageNote "Recommended property. This property refers to a site or end-point that is listed in the catalog."@en .
+
+<http://purl.org/dc/terms/spatial> a rdf:Property ;
+  rdfs:label "Catalogue - spatial"@en ;
+  vann:usageNote "Recommended property. This property refers to a geographical area covered by the Catalogue."@en .
+
+<http://www.w3.org/ns/dcat#themeTaxonomy> a rdf:Property ;
+  rdfs:label "themes"@en ;
+  vann:usageNote "Recommended property. This property refers to a knowledge organisation system used to classify the Catalogue's Datasets."@en .
+
+<http://purl.org/dc/terms/modified> a rdf:Property ;
+  rdfs:label "Catalogue - update/modification date"@en ;
+  vann:usageNote "Recommended property. This property contains the most recent date on which the Catalogue was modified. This property should be defined as rdfs:Lideral typed as xsd:date or xsd:dateTime."@en .
+
+<http://www.w3.org/ns/dcat#catalog> a rdf:Property ;
+  rdfs:label "Data Catalogue - catalog "@en ;
+  vann:usageNote "Optional property. This property refers to  a catalog whose contents are of interest in the context of this catalog."@en .
+
+<http://purl.org/dc/terms/creator> a rdf:Property ;
+  rdfs:label "Data Catalogue- creator"@en ;
+  vann:usageNote "Optional property. This property refers to an entity primarily responsible for making the resource"@en .
+
+<http://purl.org/dc/terms/rights> a rdf:Property ;
+  rdfs:label "Catalogue - rights"@en ;
+  vann:usageNote "Optional property. This property refers to a statement that specifies rights associated with the Catalogue."@en .
+
+
+#-------------------------->
+#----- Dataset Class ------>
+#-------------------------->
+
+#-- Class definition -->
+
+<http://www.w3.org/ns/dcat#Dataset> a rdfs:Class ;
+  rdfs:label "Dataset"@en ;
+  vann:usageNote "Mandatory class. A conceptual entity that represents the information published."@en ;
+  rdfs:isDefinedBy "http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-dataset" .
+
+#-- Properties definition -->
+
+<http://purl.org/dc/terms/creator> a rdf:Property ;
+  rdfs:label "Dataset - creator"@en ;
+  vann:usageNote "Mandatory property. This property refers to an entity primarily responsible for making the resource"@en .
+
+<http://purl.org/dc/terms/description> a rdf:Property ;
+  rdfs:label "Dataset - description"@en ;
+  vann:usageNote "Mandatory property. This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description."@en .
+
+<http://purl.org/dc/terms/identifier> a rdf:Property ;
+  rdfs:label "Dataset - identifier"@en ;
+  vann:usageNote "Mandatory property. This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue."@en .
+
+<http://purl.org/dc/terms/publisher> a rdf:Property ;
+  rdfs:label "Dataset - publisher"@en ;
+  vann:usageNote "Mandatory property. This property refers to an entity (organisation) responsible for making the Dataset available."@en .
+
+<http://purl.org/dc/terms/title> a rdf:Property ;
+  rdfs:label "Dataset - title"@en ;
+  vann:usageNote "Mandatory property. This property contains a name given to the Dataset. This property can be repeated for parallel language versions of the name."@en .
+
+<http://www.w3.org/ns/dcat#contactPoint> a rdf:Property ;
+  rdfs:label "Dataset - contact point"@en ;
+  vann:usageNote "Recommended property. This property contains contact information that can be used for sending comments about the Dataset."@en .
+
+<http://www.w3.org/ns/dcat#distribution> a rdf:Property ;
+  rdfs:label "Dataset - dataset distribution"@en ;
+  vann:usageNote "Recommended property. This property links the Dataset to an available Distribution."@en .
+
+<http://www.w3.org/ns/dcat#keyword> a rdf:Property ;
+  rdfs:label "Dataset - keyword/tag"@en ;
+  vann:usageNote "Recommended property. This property contains a keyword or tag describing the Dataset."@en .
+
+<http://purl.org/dc/terms/spatial> a rdf:Property ;
+  rdfs:label "Dataset - spatial/ geographical coverage"@en ;
+  vann:usageNote "Recommended property. This property refers to a geographic region covered by the Dataset."@en .
+
+<http://purl.org/dc/terms/temporal> a rdf:Property ;
+  rdfs:label "Dataset - temporal coverage"@en ;
+  vann:usageNote "Recommended property. This property refers to a temporal period covered by the Dataset."@en .
+
+<http://www.w3.org/ns/dcat#theme> a rdf:Property ;
+  rdfs:label "Dataset - theme/categor"@en ;
+  vann:usageNote "Recommended property. This property refers to a category of the Dataset. A Dataset may be associated with multiple themes. Subproperty of dct:subject.<"@en .
+
+<http://purl.org/dc/terms/accessRights> a rdf:Property ;
+  rdfs:label "Dataset - access rights"@en ;
+  vann:usageNote "Optional property. This property specifies whether the Dataset is open data, has access restrictions or is not public. "@en .
+
+<http://purl.org/dc/terms/conformsTo> a rdf:Property ;
+  rdfs:label "Dataset - conforms to"@en ;
+  vann:usageNote "Optional property. This property refers to an implementing rule or other specification."@en .
+
+<http://purl.org/dc/terms/isVersionOf> a rdf:Property ;
+  rdfs:label "Dataset - is version of"@en ;
+  vann:usageNote "Optional property. This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation."@en .
+
+<http://www.w3.org/ns/dcat#landingPage> a rdf:Property ;
+  rdfs:label "Dataset - landing page"@en ;
+  vann:usageNote "Optional property. This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator."@en .
+
+<http://www.w3.org/ns/adms#identifier> a rdf:Property ;
+  rdfs:label "Dataset - other identifier"@en ;
+  vann:usageNote "Optional property. This property refers to a secondary identifier of the Dataset, such as MAST/ADS, DataCite , DOI , EZID  or W3ID."@en .
+
+<http://www.w3.org/2002/07/owl#versionInfo> a rdf:Property ;
+  rdfs:label "Dataset - version"@en ;
+  vann:usageNote "Optional property. This property contains a version number or other version designation of the Dataset."@en .
+
+<http://www.w3.org/ns/adms#versioNotes> a rdf:Property ;
+  rdfs:label "Dataset - version notes"@en ;
+  vann:usageNote "Optional property. This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes."@en .
+
+
+#---------------------------->
+#----- Data Service Class ------>
+#---------------------------->
+
+#-- Class definition -->
+
+<http://www.w3.org/ns/dcat#DataService> a rdfs:Class ;
+  rdfs:label "Data Service"@en ;
+  vann:usageNote "Recommended class. A collection of operations that provides access to one or more datasets or data processing functions."@en ;
+  rdfs:isDefinedBy "https://www.w3.org/TR/vocab-dcat-2/#Class:Data_Service" .
+
+#-- Properties definition -->
+
+<http://www.w3.org/ns/dcat#endpointURL> a rdf:Property ;
+  rdfs:label "Data Service - endpoint URL"@en ;
+  vann:usageNote "Mandatory property. The root location or primary endpoint of the service (an IRI)."@en .
+
+<http://purl.org/dc/terms/title> a rdf:Property ;
+  rdfs:label "Data Service - title"@en ;
+  vann:usageNote "Mandatory property. This property contains a name given to the Data Service. This property can be repeated for parallel language versions of the name."@en .
+
+<http://www.w3.org/ns/dcat#servesdataset> a rdf:Property ;
+  rdfs:label "Data Service - serves dataset"@en ;
+  vann:usageNote "Recommended property. A collection of data that this data service can distribute."@en .
+
+<http://www.w3.org/ns/dcat#endpointDescription> a rdf:Property ;
+  rdfs:label "Data Service - endpoint description"@en ;
+  vann:usageNote "Recommended property.  A description of the services available via the end-points, including their operations, parameters etc "@en .
+
+<http://purl.org/dc/terms/accessRights> a rdf:Property ;
+  rdfs:label "Data Service - access rights"@en ;
+  vann:usageNote "Recommended property. his property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public. A controlled vocabulary with three members (:public, :restricted, :non-public) will be created and maintained by the Publications Office of the EU."@en .
+
+<"http://purl.org/dc/terms/description> a rdf:Property ;
+  rdfs:label "Data Service - description"@en ;
+  vann:usageNote "Optional property. This property contains a free-text account of the Catalogue. This property can be repeated for parallel language versions of the description."@en .
+
+<http://purl.org/dc/terms/license> a rdf:Property ;
+  rdfs:label "Data Service - license"@en ;
+  vann:usageNote "Optional property. This property refers to the licence under which the Catalogue can be used or reused."@en .
+
+
+#------------------------------->
+#----- Distribution Class ------>
+#------------------------------->
+
+#-- Class definition -->
+
+<http://www.w3.org/ns/dcat#Distribution> a rdfs:Class ;
+  rdfs:label "Distribution"@en ;
+  vann:usageNote "Recommended class. A physical embodiment of the Dataset in a particular format, including visualisations of the data."@en ;
+  rdfs:isDefinedBy "http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-distribution" .
+
+#-- Properties definition -->
+
+<http://www.w3.org/ns/dcat#accessURL> a rdf:Property ;
+  rdfs:label "Distribution - access URL"@en ;
+  vann:usageNote "Mandatory property. This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset."@en .
+
+<http://data.europa.eu/r5r/availability> a rdf:Property ;
+  rdfs:label "Distribution - availability"@en ;
+  vann:usageNote "Recommended property. This property indicates how long it is planned to keep the Distribution of the Dataset available."@en .
+
+<http://purl.org/dc/terms/format> a rdf:Property ;
+  rdfs:label "Distribution - format"@en ;
+  vann:usageNote "Recommended property. This property refers to the file format of the Distribution."@en .
+
+<http://purl.org/dc/terms/license> a rdf:Property ;
+  rdfs:label "Distribution - licence"@en ;
+  vann:usageNote "Recommended property. This property refers to the licence under which the Distribution is made available."@en .
+
+<http://www.w3.org/ns/dcat#accessService> a rdf:Property ;
+  rdfs:label "Distribution - access service"@en ;
+  vann:usageNote "Optional property. This property refers to a data service that gives access to the distribution of the dataset."@en .
+
+<http://www.w3.org/ns/dcat#byteSize> a rdf:Property ;
+  rdfs:label "Distribution - byte size"@en ;
+  vann:usageNote "Optional property. This property contains the size of a Distribution in bytes. This property should be defined as rdfs:Lideral typed as xsd:date or xsd:dateTime."@en .
+
+<http://spdx.org/rdf/terms#Checksum> a rdf:Property ;
+  rdfs:label "Distribution - checksum"@en ;
+  vann:usageNote "Optional property. This property provides a mechanism that can be used to verify that the contents of a distribution have not changed."@en .
+
+<http://www.w3.org/ns/dcat#compressFormat> a rdf:Property ;
+  rdfs:label "Distribution - compression format"@en ;
+  vann:usageNote "Optional property. This property refers to the format of the file in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA."@en .
+
+<http://www.w3.org/ns/dcat#downloadURL> a rdf:Property ;
+  rdfs:label "Distribution - download URL"@en ;
+  vann:usageNote "Optional property. This property contains a URL that is a direct link to a downloadable file in a given format."@en .
+
+<http://purl.org/dc/terms/conformsTo> a rdf:Property ;
+  rdfs:label "Distribution - linked schemas"@en ;
+  vann:usageNote "Optional property. This property refers to an established schema to which the described Distribution conforms."@en .
+
+<http://purl.org/dc/terms/issued> a rdf:Property ;
+  rdfs:label "Distribution - release date"@en ;
+  vann:usageNote "Optional property. This property contains the date of formal issuance (e.g., publication) of the Distribution. This property should be defined as rdfs:Lideral typed as xsd:date or xsd:dateTime."@en .
+
+<http://purl.org/dc/terms/rights> a rdf:Property ;
+  rdfs:label "Distribution - rights"@en ;
+  vann:usageNote "Optional property. This property refers to a statement that specifies rights associated with the Distribution."@en .
+
+<http://purl.org/dc/terms/title> a rdf:Property ;
+  rdfs:label "Distribution - title"@en ;
+  vann:usageNote "Optional property. This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description."@en .
+
+<http://purl.org/dc/terms/modified> a rdf:Property ;
+  rdfs:label "Distribution - update/modification date"@en ;
+  vann:usageNote "Optional property. This property contains the most recent date on which the Distribution was changed or modified. This property should be defined as rdfs:Lideral typed as xsd:date or xsd:dateTime."@en .
+
+
+#------------------------>
+#----- Agent Class ------>
+#------------------------>
+
+#-- Class definition -->
+
+<http://xmlns.com/foaf/0.1/Agent> a rdfs:Class ;
+  rdfs:label "Distribution"@en ;
+  vann:usageNote "Mandatory class. An entity that is associated with Catalogues and/or Datasets. If the Agent is an organisation, the use of the Organization Ontology  is recommended."@en ;
+  rdfs:isDefinedBy "http://xmlns.com/foaf/spec/#term_Agent" .
+
+#-- Properties definition -->
+
+<http://xmlns.com/foaf/0.1/name> a rdf:Property ;
+  rdfs:label "Agent - name"@en ;
+  vann:usageNote "Mandatory property. This property contains a name of the agent. This property can be repeated for different versions of the name (e.g. the name in different languages)"@en .
+
+<http://purl.org/dc/terms/type> a rdf:Property ;
+  rdfs:label "type"@en ;
+  vann:usageNote "Recommended property. This property refers to a type of the agent that makes the Catalogue or Dataset available."@en .
+
+#---------------------------------->
+#----- Category Scheme Class ------>
+#---------------------------------->
+
+#-- Class definition -->
+
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> a rdfs:Class ;
+  rdfs:label "Category Scheme"@en ;
+  vann:usageNote "Recommended class. A concept collection (e.g. controlled vocabulary) in which the Category is defined."@en ;
+  rdfs:isDefinedBy "http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme" .
+
+#-- Properties definition -->
+
+<http://purl.org/dc/terms/title> a rdf:Property ;
+  rdfs:label "Category Scheme - title"@en ;
+  vann:usageNote "Mandatory property. This property contains a name of the category scheme. May be repeated for different versions of the name."@en .
+
+#--------------------------->
+#----- Category Class ------>
+#--------------------------->
+
+#-- Class definition -->
+
+<http://www.w3.org/2004/02/skos/core#Concept> a rdfs:Class ;
+  rdfs:label "Category"@en ;
+  vann:usageNote "Recommended class. A subject of a Dataset."@en ;
+  rdfs:isDefinedBy "http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme" .
+
+#-- Properties definition -->
+
+<http://www.w3.org/2004/02/skos/core#prefLabel> a rdf:Property ;
+  rdfs:label "Category - preferred label"@en ;
+  vann:usageNote "Optional property. This property contains a preferred label of the category. This property can be repeated for parallel language versions of the label."@en .
+
+#----------------------------------->
+#----- License Document Class ------>
+#----------------------------------->
+
+#-- Class definition -->
+
+<http://purl.org/dc/terms/LicenseDocument> a rdfs:Class ;
+  rdfs:label "Licence Document"@en ;
+  vann:usageNote "Recommended class. A legal document giving official permission to do something with a resource."@en ;
+  rdfs:isDefinedBy "http://dublincore.org/documents/2012/06/14/dcmi-terms/?v=terms#LicenseDocument" .
+
+#-- Properties definition -->
+
+<http://purl.org/dc/terms/type> a rdf:Property ;
+  rdfs:label "Licence Document - type"@en ;
+  vann:usageNote "Recommended property. This property refers to a type of licence, e.g. indicating ‘public domain’ or ‘royalties required’."@en .
+
+#-------------------------->
+#----- Literal Class ------>
+#-------------------------->
+
+#-- Class definition -->
+
+<http://www.w3.org/2000/01/rdf-schema#Literal> a rdfs:Class ;
+  rdfs:label "Literal"@en ;
+  vann:usageNote "Mandatory class. A literal value such as a string or integer; Literals may be typed, e.g. as a date according to xsd:date. Literals that contain human-readable text have an optional language tag as defined by BCP 47."@en ;
+  rdfs:isDefinedBy "http://www.w3.org/TR/rdf-concepts/#section-Literals" .
