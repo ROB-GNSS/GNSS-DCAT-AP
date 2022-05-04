@@ -25,7 +25,7 @@
     "http://purl.org/dc/terms/modified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2022-02-23"
+        "@value": "2022-03-03"
       }
     ],
     "http://purl.org/dc/terms/publisher": [
@@ -41,7 +41,7 @@
     "http://purl.org/dc/terms/title": [
       {
         "@language": "en",
-        "@value": "GNSS_DCAT-AP: an extension of the DCAT Application Profile for GNSS observation data"
+        "@value": "GNSS-DCAT-AP: an extension of the DCAT Application Profile for GNSS observation data"
       }
     ],
     "http://purl.org/dc/terms/type": [
@@ -56,13 +56,13 @@
     ],
     "http://www.w3.org/2002/07/owl#versionInfo": [
       {
-        "@value": "0.1.0"
+        "@value": "0.2.0"
       }
     ],
     "http://www.w3.org/ns/adms#versionNotes": [
       {
         "@language": "en",
-        "@value": "Change log for GNSS-DCAT-AP v0.1: DCAT-AP v0.1 draft version uploaded as .docx, .pdf and .ttl and aligned with DCAT-AP v.2.1.0"
+        "@value": "Change log for GNSS-DCAT-AP v0.2: updated draft version including new Dataset optional property uploaded as .docx, .pdf and .ttl and aligned with DCAT-AP v.2.1.0"
       }
     ],
     "http://xmlns.com/foaf/0.1/homepage": [
@@ -3550,6 +3550,24 @@
       {
         "@language": "en",
         "@value": "Dataset - is version of"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/dqv#hasQualityMeasurement",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@language": "en",
+        "@value": "Optional property. This property refers to a quality measurement performed on Dataset."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Dataset - has quality measurement"
       }
     ]
   },

@@ -12,10 +12,10 @@
     <dc:title xml:lang="en">GNSS-DCAT-AP: an extension of the DCAT Application Profile for GNSS observation data</dc:title>
     <dc:description xml:lang="en">The GNSS-DCAT Application aims at providing a commonly-agreed vocabulary for GNSS observation data as Open Data. GNSS-DCAT-AP defines a certain number of additions to the DCAT-AP model that can be used to describe GNSS data e.g. daily RINEX files</dc:description>
     <dc:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-22</dc:created>
-    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-23</dc:modified>
-    <owl:versionInfo>0.1.0</owl:versionInfo>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-05-03</dc:modified>
+    <owl:versionInfo>0.2.0</owl:versionInfo>
     <ns0:preferredNamespacePrefix>gnss</ns0:preferredNamespacePrefix>
-    <ns1:versionNotes xml:lang="en">Change log for GNSS-DCAT-AP v0.1: DCAT-AP v0.1 draft version uploaded as .docx, .pdf and .ttl and aligned with DCAT-AP v.2.1.0</ns1:versionNotes>
+    <ns1:versionNotes xml:lang="en">Change log for GNSS-DCAT-AP v0.2: updated draft version including new Dataset optional property uploaded as .docx, .pdf and .ttl and aligned with DCAT-AP v.2.1.0</ns1:versionNotes>
     <foaf:homepage rdf:resource="https://www.fair-gnss.oma.be/gnss-dcat-ap"/>
     <dc:publisher rdf:resource="http://www.gnss.be"/>
     <dc:creator rdf:resource="http://www.gnss.be"/>
@@ -829,6 +829,11 @@
   <rdf:Property rdf:about="http://www.w3.org/ns/dcat#landingPage">
     <rdfs:label xml:lang="en">Dataset - landing page</rdfs:label>
     <ns0:usageNote xml:lang="en">Optional property. This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator.</ns0:usageNote>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://www.w3.org/ns/dqv#hasQualityMeasurement">
+    <rdfs:label xml:lang="en">Dataset - has quality measurement</rdfs:label>
+    <ns0:usageNote xml:lang="en">Optional property. This property refers to a quality measurement performed on Dataset.</ns0:usageNote>
   </rdf:Property>
 
   <rdf:Property rdf:about="http://www.w3.org/ns/adms#identifier">

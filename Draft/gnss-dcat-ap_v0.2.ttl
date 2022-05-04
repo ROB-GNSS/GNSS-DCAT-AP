@@ -2,6 +2,7 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcatap: <http://data.europa.eu/r5r> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix gml: <http://www.opengis.net/gml/3.2> .
 @prefix geo: <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/gnss#> .
@@ -18,20 +19,20 @@
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
-@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix voaf: <http://purl.org/vocommons/voaf> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 
 
 <https://www.fair-gnss.oma.be/gnss-dcat-ap>
   a owl:Ontology, adms:Asset ;
-  dct:title "GNSS_DCAT-AP: an extension of the DCAT Application Profile for GNSS observation data"@en ;
+  dct:title "GNSS-DCAT-AP: an extension of the DCAT Application Profile for GNSS observation data"@en ;
   dct:description "The GNSS-DCAT Application aims at providing a commonly-agreed vocabulary for GNSS observation data as Open Data. GNSS-DCAT-AP defines a certain number of additions to the DCAT-AP model that can be used to describe GNSS data e.g. daily RINEX files"@en ;
   dct:created "2022-02-22"^^xsd:date ;
-  dct:modified "2022-02-23"^^xsd:date ;
-  owl:versionInfo "0.1.0" ;
+  dct:modified "2022-05-03"^^xsd:date ;
+  owl:versionInfo "0.2.0" ;
   vann:preferredNamespacePrefix "gnss" ;
-  adms:versionNotes "Change log for GNSS-DCAT-AP v0.1: DCAT-AP v0.1 draft version uploaded as .docx, .pdf and .ttl and aligned with DCAT-AP v.2.1.0"@en ;
+  adms:versionNotes "Change log for GNSS-DCAT-AP v0.2: updated draft version including new Dataset optional property uploaded as .docx, .pdf and .ttl and aligned with DCAT-AP v.2.1.0"@en ;
   foaf:homepage <https://www.fair-gnss.oma.be/gnss-dcat-ap> ;
   dct:publisher <https://www.fair-gnss.oma.be> ;
   dct:creator <https://www.fair-gnss.oma.be> ;
@@ -920,6 +921,10 @@ geo:satelliteSystem
 <http://www.w3.org/ns/dcat#landingPage> a rdf:Property ;
   rdfs:label "Dataset - landing page"@en ;
   vann:usageNote "Optional property. This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator."@en .
+
+<http://www.w3.org/ns/dqv#hasQualityMeasurement> a rdf:Property ;
+  rdfs:label "Dataset - has quality measurement"@en ;
+  vann:usageNote "Optional property. This property refers to a quality measurement performed on Dataset."@en .
 
 <http://www.w3.org/ns/adms#identifier> a rdf:Property ;
   rdfs:label "Dataset - other identifier"@en ;
