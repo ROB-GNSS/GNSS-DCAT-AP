@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "To acknowledge this work, please cite it as below."
+authors:
+  - family-names: Bruyninx
+    given-names: Carine
+    affiliation: Royal Observatory of Belgium
+  - family-names: De Bodt
+    given-names: Stefanie
+    affiliation: Ghent University
+  - family-names: Fabian
+    given-names: Andras
+    affiliation: Royal Observatory of Belgium
+  - family-names: Legrand
+    given-names: Juliette
+    affiliation: Royal Observatory of Belgium
+  - family-names: Miglio
+    given-names: Anna
+    affiliation: Royal Observatory of Belgium
+  - family-names: Oset Garcia
+    given-names: Paula
+    affiliation: Ghent University
+  - family-names: Van Nieuwerburgh
+    given-names: Inge
+    affiliation: Ghent University
+title: ROB-GNSS/GNSS-DCAT-AP: V0.2
+version: V0.2
+date-released: 2023-03-28
+doi: 10.5281/zenodo.7777568
