@@ -1,6 +1,6 @@
 # GNSS-DCAT-AP
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7777569.svg)](https://doi.org/10.5281/zenodo.7777569
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7777569.svg)](https://doi.org/10.5281/zenodo.7777569)
 
 First draft of a DCAT-AP extension for GNSS observation data (GNSS-DCAT-AP) to facilitate GNSS data exchange. This proposal aims at facilitating the exchange of GNSS RINEX observation data in order to increase their Findability, Accessibility, Interoperability, and Re-usability (FAIR).
 
