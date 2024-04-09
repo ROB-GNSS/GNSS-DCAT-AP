@@ -1,0 +1,894 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ns0: <http://purl.org/vocab/vann/> .
+@prefix ns1: <http://www.w3.org/ns/adms#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+
+<https://gnss.be/vocab/gnss-dcat-ap>
+  a owl:Ontology, <http://www.w3.org/ns/adms#Asset> ;
+  dc:created "2022-02-22"^^xsd:date ;
+  dc:creator <http://www.gnss.be> ;
+  dc:description "The GNSS-DCAT Application aims at providing a commonly-agreed vocabulary for GNSS observation data as Open Data. GNSS-DCAT-AP defines a certain number of additions to the DCAT-AP model that can be used to describe GNSS data e.g. daily RINEX files"@en ;
+  dc:modified "2022-03-03"^^xsd:date, "2024-04-08"^^xsd:date ;
+  dc:publisher <http://www.gnss.be> ;
+  dc:status <http://purl.org/adms/status/UnderDevelopment> ;
+  dc:title "GNSS-DCAT-AP: an extension of the DCAT Application Profile for GNSS observation data"@en ;
+  dc:type <http://purl.org/adms/assettype/Ontology> ;
+  ns0:preferredNamespacePrefix "gnss"^^xsd:string ;
+  owl:versionInfo "0.3.0"^^xsd:string ;
+  ns1:versionNotes "Change log for GNSS-DCAT-AP v0.2: updated draft version including new Dataset optional property uploaded as .docx, .pdf and .ttl and aligned with DCAT-AP v.2.1.0"@en, "Change namespace/datatype"@en ;
+  foaf:homepage <https://www.fair-gnss.oma.be> .
+
+<https://gnss.be/vocab/2023/gnss#Antenna>
+  a owl:Class ;
+  rdfs:comment "Recommended class. Domain specific vocabulary for the antenna associated with gnss:Station"@en ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "Station antenna"@en .
+
+<https://gnss.be/vocab/2023/gnss#agency>
+  a owl:Property ;
+  rdfs:comment "Optional property. Agency as in the RINEX header (e.g., ROB)"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#OBSHeader> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "GNSS obs header - agency"@en ;
+  rdfs:range rdfs:Literal .
+
+<https://gnss.be/vocab/2023/gnss#OBSHeader>
+  a owl:Class ;
+  rdfs:comment "Recommended class. Domain specific vocabulary for the information in the RINEX observation file header associated with gnss:OBSData"@en ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "GNSS observation data header"@en .
+
+rdfs:Literal
+  a rdfs:Class ;
+  ns0:usageNote "Mandatory class. A literal value such as a string or integer; Literals may be typed, e.g. as a date according to xsd:date. Literals that contain human-readable text have an optional language tag as defined by BCP 47."@en ;
+  rdfs:isDefinedBy "http://www.w3.org/TR/rdf-concepts/#section-Literals"^^xsd:string ;
+  rdfs:label "Literal"@en .
+
+<https://gnss.be/vocab/2023/gnss#markerNumber>
+  a owl:Property ;
+  rdfs:comment "Optional property. DOMES number"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#OBSHeader> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "GNSS obs header - marker number"@en ;
+  rdfs:range rdfs:Literal .
+
+dcat:accessService
+  a rdf:Property ;
+  ns0:usageNote "Optional property. This property refers to a data service that gives access to the distribution of the dataset."@en ;
+  rdfs:label "Distribution - access service"@en .
+
+dcat:Catalog
+  a rdfs:Class ;
+  ns0:usageNote "Mandatory class. A catalogue or repository that hosts the Datasets being described."@en ;
+  rdfs:isDefinedBy "http://www.w3.org/TR/vocab-dcat-2/#Class:Catalog"^^xsd:string ;
+  rdfs:label "Catalogue"@en .
+
+<https://gnss.be/vocab/2023/gnss#compressFormatType>
+  a owl:Property ;
+  rdfs:comment "Optional property. Crinex Version (e.g. 3.0)"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#OBSData> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "GNSS obs data  - compression format type"@en ;
+  rdfs:range rdfs:Literal .
+
+<https://gnss.be/vocab/2023/gnss#OBSData>
+  a owl:Class ;
+  rdfs:comment "Recommended class. Domain specific vocabulary for RINEX observation files"@en ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "GNSS observation data"@en .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#GNSSAntenna>
+  a owl:Class ;
+  rdfs:comment "Optional class. Antenna info from GeodesyML installed on gnss:temporal (associated with gnss:Station)"@en ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Antenna from GeodesyML"@en .
+
+<https://gnss.be/vocab/2023/gnss#frequency>
+  a owl:Property ;
+  rdfs:comment "Optional property. Daily/hourly RINEX files"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#OBSData> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "GNSS obs data  - frequency"@en ;
+  rdfs:range dc:Frequency .
+
+<https://gnss.be/vocab/2023/gnss#Station>
+  a owl:Class ;
+  rdfs:comment "Recommended class. Domain specific vocabulary for station information"@en ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "Station"@en .
+
+dcat:keyword
+  a rdf:Property ;
+  ns0:usageNote "Recommended property. This property contains a keyword or tag describing the Dataset."@en ;
+  rdfs:label "Dataset - keyword/tag"@en .
+
+<https://gnss.be/vocab/2023/gnss#interval>
+  a owl:Property ;
+  rdfs:comment "Recommended property. 30 sec / 15 sec/1 sec"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#OBSHeader> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "GNSS obs header - interval"@en ;
+  rdfs:range xsd:nonNegativeInteger .
+
+dcat:DataService
+  a rdfs:Class ;
+  ns0:usageNote "Recommended class. A collection of operations that provides access to one or more datasets or data processing functions."@en ;
+  rdfs:isDefinedBy "https://www.w3.org/TR/vocab-dcat-2/#Class:Data_Service"^^xsd:string ;
+  rdfs:label "Data Service"@en .
+
+<https://gnss.be/vocab/2023/gnss#antenna>
+  a owl:Property ;
+  rdfs:comment "Recommended property. Antenna information from the RINEX header"@en, "Optional property. Station antenna from GeodesyML"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#Station>, <https://gnss.be/vocab/2023/gnss#OBSHeader> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "GNSS obs header - antenna"@en, "Station -antenna"@en ;
+  rdfs:range <https://gnss.be/vocab/2023/gnss#Antenna>, <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna> .
+
+dcat:servesdataset
+  a rdf:Property ;
+  ns0:usageNote "Recommended property. A collection of data that this data service can distribute."@en ;
+  rdfs:label "Data Service - serves dataset"@en .
+
+<https://gnss.be/vocab/2023/gnss#rinexVersion>
+  a owl:Property ;
+  rdfs:comment """Optional property. 	RINEX sub-version (text e.g 3.04)"""@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#OBSHeader> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "GNSS obs header - RINEX sub-version"@en ;
+  rdfs:range rdfs:Literal .
+
+<https://gnss.be/vocab/2023/gnss#gnss:marker-arpNorthEcc>
+  a owl:Property ;
+  rdfs:comment "Recommended property. Distance from the ARP  to the marker - North component"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#Antenna> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "Antenna - marker-ARP North Ecc."@en ;
+  rdfs:range xsd:float .
+
+dc:conformsTo
+  a rdf:Property ;
+  ns0:usageNote "Optional property. This property refers to an established schema to which the described Distribution conforms."@en, "Optional property. This property refers to an implementing rule or other specification."@en ;
+  rdfs:label "Dataset - conforms to"@en, "Distribution - linked schemas"@en .
+
+<https://gnss.be/vocab/2023/gnss#gnss:marker-arpUpEcc>
+  a owl:Property ;
+  rdfs:comment "Recommended property. Distance from the ARP  to the marker - Up component"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#Antenna> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "Antenna - marker-ARP Up Ecc."@en ;
+  rdfs:range xsd:float .
+
+dcat:accessURL
+  a rdf:Property ;
+  ns0:usageNote "Mandatory property. This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset."@en ;
+  rdfs:label "Distribution - access URL"@en .
+
+<https://gnss.be/vocab/2023/gnss#compressFormat>
+  a owl:Property ;
+  rdfs:comment "Optional property. Compressions format"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#OBSData> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "GNSS obs data  - compression format"@en ;
+  rdfs:range dc:Standard .
+
+<http://data.europa.eu/r5r/availability>
+  a rdf:Property ;
+  ns0:usageNote "Recommended property. This property indicates how long it is planned to keep the Distribution of the Dataset available."@en ;
+  rdfs:label "Distribution - availability"@en .
+
+ns1:versionNotes
+  a owl:Property ;
+  rdfs:comment "Optional property. Description of the differences between current and a previous version of the RINEX header"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#OBSHeader> ;
+  rdfs:isDefinedBy ns1:versioNotes ;
+  rdfs:label "GNSS obs header - version notes"@en ;
+  rdfs:range rdfs:Literal .
+
+ns1:versioNotes
+  a rdf:Property ;
+  ns0:usageNote "Optional property. This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes."@en ;
+  rdfs:label "Dataset - version notes"@en .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#alignmentFromTrueNorth>
+  a owl:Property ;
+  rdfs:comment "Optional property. Alignment from true north"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Antenna from GeodesyML - alignment from true north"@en ;
+  rdfs:range xsd:double .
+
+dc:language
+  a rdf:Property ;
+  ns0:usageNote "Recommended property. This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the metadata is provided in multiple languages."@en ;
+  rdfs:label "Catalogue - language"@en .
+
+dcat:catalog
+  a rdf:Property ;
+  ns0:usageNote "Optional property. This property refers to  a catalog whose contents are of interest in the context of this catalog."@en ;
+  rdfs:label "Data Catalogue - catalog "@en .
+
+dc:format
+  a rdf:Property ;
+  ns0:usageNote "Recommended property. This property refers to the file format of the Distribution."@en ;
+  rdfs:label "Distribution - format"@en .
+
+dc:LicenseDocument
+  a rdfs:Class ;
+  ns0:usageNote "Recommended class. A legal document giving official permission to do something with a resource."@en ;
+  rdfs:isDefinedBy "http://dublincore.org/documents/2012/06/14/dcmi-terms/?v=terms#LicenseDocument"^^xsd:string ;
+  rdfs:label "Licence Document"@en .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#monumentDescription>
+  a owl:Property ;
+  rdfs:comment "Optional property. Monument description (e.g. STEEL MAST)"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML - monument description"@en ;
+  rdfs:range rdfs:Literal .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument>
+  a owl:Class ;
+  rdfs:comment """Optional class.	Monument info from GeodesyML (associated with gnss:Station)"""@en ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML"@en .
+
+<https://gnss.be/vocab/2023/gnss#geodesyml>
+  a owl:Property ;
+  rdfs:comment "Optional property. URL resource for the GeodesyML file"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#Station> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "Station -geodesyML file"@en ;
+  rdfs:range dcat:Distribution .
+
+dcat:Distribution
+  a rdfs:Class ;
+  ns0:usageNote "Recommended class. A physical embodiment of the Dataset in a particular format, including visualisations of the data."@en ;
+  rdfs:isDefinedBy "http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-distribution"^^xsd:string ;
+  rdfs:label "Distribution"@en .
+
+dc:type
+  a rdf:Property ;
+  ns0:usageNote "Recommended property. This property refers to a type of licence, e.g. indicating ‘public domain’ or ‘royalties required’."@en, "Recommended property. This property refers to a type of the agent that makes the Catalogue or Dataset available."@en ;
+  rdfs:label "Licence Document - type"@en, "type"@en .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#name>
+  a owl:Property ;
+  rdfs:comment "Mandatory property. GNSS site names, (e.g. 4-char id, site-name, iers-DOMES, cdp-number)"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML - site name"@en ;
+  rdfs:range <http://www.opengis.net/gml/3.2CodeType> .
+
+<https://gnss.be/vocab/2023/gnss#format>
+  a owl:Property ;
+  rdfs:comment "Recommended property. RINEX 2  / RINEX 3/ RINEX 4"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#OBSData> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "GNSS obs data - format"@en ;
+  rdfs:range rdfs:Literal .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#description>
+  a owl:Property ;
+  rdfs:comment "Optional property. Site description"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML - site description"@en ;
+  rdfs:range rdfs:Literal .
+
+<https://gnss.be/vocab/2023/gnss#issued>
+  a owl:Property ;
+  rdfs:comment "Recommended property. Publication date of the header"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#OBSHeader> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "GNSS obs header - issued date"@en ;
+  rdfs:range xsd:date .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#height>
+  a owl:Property ;
+  rdfs:comment "Optional property. Height of the monument (e.g. 8 m)"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML - monument height"@en ;
+  rdfs:range xsd:double .
+
+<https://gnss.be/vocab/2023/gnss#obsData>
+  a owl:Property ;
+  rdfs:comment "Recommended property. GNSS station observation"@en ;
+  rdfs:domain dcat:Distribution ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "GNSS obs data - station"@en ;
+  rdfs:range <https://gnss.be/vocab/2023/gnss#OBSData> .
+
+<https://gnss.be/vocab/2023/gnss#station>
+  a owl:Property ;
+  rdfs:comment "Mandatory property. Station description"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#OBSData>, dcat:Dataset ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "GNSS obs data - station"@en ;
+  rdfs:range <https://gnss.be/vocab/2023/gnss#Station> .
+
+dcat:Dataset
+  a rdfs:Class ;
+  ns0:usageNote "Mandatory class. A conceptual entity that represents the information published."@en ;
+  rdfs:isDefinedBy "http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-dataset"^^xsd:string ;
+  rdfs:label "Dataset"@en .
+
+dc:title
+  a rdf:Property ;
+  ns0:usageNote "Mandatory property. This property contains a name given to the Data Service. This property can be repeated for parallel language versions of the name."@en, "Mandatory property. This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name."@en, "Mandatory property. This property contains a name given to the Dataset. This property can be repeated for parallel language versions of the name."@en, "Optional property. This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description."@en, "Mandatory property. This property contains a name of the category scheme. May be repeated for different versions of the name."@en ;
+  rdfs:label "Data Service - title"@en, "Catalogue - title"@en, "Dataset - title"@en, "Distribution - title"@en, "Category Scheme - title"@en .
+
+<https://gnss.be/vocab/2023/gnss#marker-arpUpEcc>
+  a owl:Property ;
+  rdfs:comment """Recommended property. Antenna and radome name (e.g. TRM57971.00 	NONE)"""@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#Antenna> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "Antenna - marker-ARP Up Ecc."@en ;
+  rdfs:range xsd:float .
+
+<https://gnss.be/vocab/2023/gnss#pgmName>
+  a owl:Property ;
+  rdfs:comment "Mandatory property. Name of the software used to generate the RINEX file (e.g. Spider V7.1.1.7438 )"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#PGM> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "PGM - name"@en ;
+  rdfs:range rdfs:Literal .
+
+<https://gnss.be/vocab/2023/gnss#PGM>
+  a owl:Class ;
+  rdfs:comment "Recommended class. Domain specific vocabulary for software used to generate the RINEX file associated with gnss:OBSData"@en ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "GNSS observation data generating software"@en .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#igsModelCode>
+  a owl:Property ;
+  rdfs:comment "Mandatory property. Receiver name (e.g.TRIMBLE NETR9)"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#GNSSReceiver> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Receiver from GeodesyML - name"@en ;
+  rdfs:range rdfs:Literal .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#GNSSReceiver>
+  a owl:Class ;
+  rdfs:comment "Optional class. Receiver info from GeodesyML installed on gnss:temporal (associated with gnss:Station)"@en ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Receiver from GeodesyML"@en .
+
+owl:versionInfo
+  a rdf:Property, owl:Property ;
+  ns0:usageNote "Optional property. This property contains a version number or other version designation of the Dataset."@en ;
+  rdfs:comment "Optional property. Version number or other version designation of the RINEX Header"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#OBSHeader> ;
+  rdfs:isDefinedBy owl:versionInfo ;
+  rdfs:label "Dataset - version"@en, "GNSS obs header - version info"@en ;
+  rdfs:range rdfs:Literal .
+
+<https://gnss.be/vocab/2023/gnss#markerName>
+  a owl:Property ;
+  rdfs:comment "Optional property. Marker name in the RINEX header (4-char/9-char id)"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#OBSHeader> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "GNSS obs header -  marker name"@en ;
+  rdfs:range rdfs:Literal .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#antennaReferencePoint>
+  a owl:Property ;
+  rdfs:comment "Optional property. ARP type (e.g. BPA)"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Antenna from GeodesyML - antenna reference point"@en ;
+  rdfs:range <http://www.opengis.net/gml/3.2CodeType> .
+
+<https://gnss.be/vocab/2023/gnss#manufacturerSerialNumber>
+  a owl:Property ;
+  rdfs:comment "Optional property. Serial number of the antenna"@en, "Optional property. Serial number for the receiver (e.g. 5608R50231)"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#Antenna>, <https://gnss.be/vocab/2023/gnss#Receiver> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "Antenna - manufacturer serial number"@en, "Receiver - manufacturer serial number"@en ;
+  rdfs:range rdfs:Literal .
+
+<https://gnss.be/vocab/2023/gnss#Receiver>
+  a owl:Class ;
+  rdfs:comment "Recommended class Domain specific vocabulary for the receiver associated with gnss:Station"@en ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "Station receiver"@en .
+
+skos:prefLabel
+  a rdf:Property ;
+  ns0:usageNote "Optional property. This property contains a preferred label of the category. This property can be repeated for parallel language versions of the label."@en ;
+  rdfs:label "Category - preferred label"@en .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#antennaCableLength>
+  a owl:Property ;
+  rdfs:comment "Optional property. Length of the antenna cable (e.g. 70.0)"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Antenna from GeodesyML - antenna cable length"@en ;
+  rdfs:range xsd:double .
+
+<"http://purl.org/dc/terms/description>
+  a rdf:Property ;
+  ns0:usageNote "Optional property. This property contains a free-text account of the Catalogue. This property can be repeated for parallel language versions of the description."@en ;
+  rdfs:label "Data Service - description"@en .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#foundation>
+  a owl:Property ;
+  rdfs:comment "Optional property. Monument foundation (e.g. CONCRETE BLOCK)"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML - monument foundation"@en ;
+  rdfs:range <http://www.opengis.net/gml/3.2CodeType> .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#bedrockType>
+  a owl:Property ;
+  rdfs:comment "Optional property. Bedrock Type (e.g. SEDIMENTARY)"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML - bedrock type"@en ;
+  rdfs:range rdfs:Literal .
+
+skos:ConceptScheme
+  a rdfs:Class ;
+  ns0:usageNote "Recommended class. A concept collection (e.g. controlled vocabulary) in which the Category is defined."@en ;
+  rdfs:isDefinedBy "http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme"^^xsd:string ;
+  rdfs:label "Category Scheme"@en .
+
+dcat:service
+  a rdf:Property ;
+  ns0:usageNote "Recommended property. This property refers to a site or end-point that is listed in the catalog."@en ;
+  rdfs:label "Data Catalogue - service"@en .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#installedDate>
+  a owl:Property ;
+  rdfs:comment "Recommended property. Station installation date (e.g. 2002-09-15Z)"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML - installed date"@en ;
+  rdfs:range <http://www.opengis.net/gml/3.2TimePositionType> .
+
+dcat:themeTaxonomy
+  a rdf:Property ;
+  ns0:usageNote "Recommended property. This property refers to a knowledge organisation system used to classify the Catalogue's Datasets."@en ;
+  rdfs:label "themes"@en .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#elevationCutoffSetting>
+  a owl:Property ;
+  rdfs:comment "Optional property. Elevation cut off settings (e.g. 0)"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#GNSSReceiver> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Receiver from GeodesyML - elevation cutoff setting"@en ;
+  rdfs:range xsd:double .
+
+foaf:homepage
+  a rdf:Property ;
+  ns0:usageNote "Recommended property. This property refers to a web page that acts as the main page for the Catalogue."@en ;
+  rdfs:label "Catalogue - homepage"@en .
+
+<https://gnss.be/vocab/2023/gnss#gnss:marker-arpEastEcc>
+  a owl:Property ;
+  rdfs:comment "Recommended property. Distance from the ARP  to the marker - East component"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#Antenna> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "Antenna - marker-ARP East Ecc."@en ;
+  rdfs:range rdfs:Literal .
+
+dc:modified
+  a rdf:Property ;
+  ns0:usageNote "Optional property. This property contains the most recent date on which the Distribution was changed or modified. This property should be defined as rdfs:Lideral typed as xsd:date or xsd:dateTime."@en, "Recommended property. This property contains the most recent date on which the Catalogue was modified. This property should be defined as rdfs:Lideral typed as xsd:date or xsd:dateTime."@en ;
+  rdfs:label "Catalogue - update/modification date"@en, "Distribution - update/modification date"@en .
+
+<https://gnss.be/vocab/2023/gnss#observer>
+  a owl:Property ;
+  rdfs:comment "Optional property. Observer as in the RINEX header (e.g., John Smith)"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#OBSHeader> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "GNSS obs header - observer"@en ;
+  rdfs:range rdfs:Literal .
+
+dc:license
+  a rdf:Property ;
+  ns0:usageNote "Recommended property. This property refers to the licence under which the Catalogue can be used or reused."@en, "Optional property. This property refers to the licence under which the Catalogue can be used or reused."@en, "Recommended property. This property refers to the licence under which the Distribution is made available."@en ;
+  rdfs:label "Distribution - licence"@en, "Catalogue - licence"@en, "Data Service - license"@en .
+
+dcat:landingPage
+  a rdf:Property ;
+  ns0:usageNote "Optional property. This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator."@en ;
+  rdfs:label "Dataset - landing page"@en .
+
+dcat:compressFormat
+  a rdf:Property ;
+  ns0:usageNote "Optional property. This property refers to the format of the file in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA."@en ;
+  rdfs:label "Distribution - compression format"@en .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#bedrockCondition>
+  a owl:Property ;
+  rdfs:comment "Optional property. Bedrock conditions (e.g., FRESH)"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML - bedrock condition"@en ;
+  rdfs:range rdfs:Literal .
+
+ns1:identifier
+  a rdf:Property ;
+  ns0:usageNote "Optional property. This property refers to a secondary identifier of the Dataset, such as MAST/ADS, DataCite , DOI , EZID  or W3ID."@en ;
+  rdfs:label "Dataset - other identifier"@en .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#type>
+  a owl:Property ;
+  rdfs:comment "Optional property. Monument type (e.g. CORS)"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML - monument type"@en ;
+  rdfs:range rdfs:Literal .
+
+dcat:distribution
+  a rdf:Property ;
+  ns0:usageNote "Recommended property. This property links the Dataset to an available Distribution."@en ;
+  rdfs:label "Dataset - dataset distribution"@en .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#marker-arpNorthEcc>
+  a owl:Property ;
+  rdfs:comment "Recommended property. Distance from the ARP to the marker - North component"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Antenna from GeodesyML - marker-ARP North Ecc."@en ;
+  rdfs:range xsd:float .
+
+dc:accessRights
+  a rdf:Property ;
+  ns0:usageNote "Recommended property. his property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public. A controlled vocabulary with three members (:public, :restricted, :non-public) will be created and maintained by the Publications Office of the EU."@en, "Optional property. This property specifies whether the Dataset is open data, has access restrictions or is not public. "@en ;
+  rdfs:label "Data Service - access rights"@en, "Dataset - access rights"@en .
+
+<https://gnss.be/vocab/2023/gnss#temporal>
+  a owl:Property ;
+  rdfs:comment "Recommended property. Temporal coverage from the RINEX header (start time/date-end time/date)"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#OBSHeader> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "GNSS obs header - temporal coverage"@en ;
+  rdfs:range dc:PeriodOfTime .
+
+<https://gnss.be/vocab/2023/gnss#firmwareVersion>
+  a owl:Property ;
+  rdfs:comment "Recommended property. Firmware version (e.g. 5.37)"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#Receiver> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "Receiver - firmware version"@en ;
+  rdfs:range rdfs:Literal .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#antennaCableType>
+  a owl:Property ;
+  rdfs:comment "Optional property. Type of cable of the antenna (e.g. CNT-400 50 Ohm)"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Antenna from GeodesyML - antenna cable type"@en ;
+  rdfs:range rdfs:Literal .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#manufacturerSerialNumber>
+  a owl:Property ;
+  rdfs:comment "Optional property. Serial number for the antenna (e.g. 103320)"@en, "Optional property. Serial number for the receiver (e.g. 5608R50231)"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna>, <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#GNSSReceiver> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Antenna from GeodesyML - manufacturer serial number"@en, "Receiver from GeodesyML - manufacturer serial number"@en ;
+  rdfs:range rdfs:Literal .
+
+foaf:Agent
+  a rdfs:Class ;
+  ns0:usageNote "Mandatory class. An entity that is associated with Catalogues and/or Datasets. If the Agent is an organisation, the use of the Organization Ontology  is recommended."@en ;
+  rdfs:isDefinedBy "http://xmlns.com/foaf/spec/#term_Agent"^^xsd:string ;
+  rdfs:label "Distribution"@en .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#radomeSerialNumber>
+  a owl:Property ;
+  rdfs:comment "Optional property. Serial number of the radome (e.g. N/A)"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Antenna from GeodesyML - radome serial number"@en ;
+  rdfs:range rdfs:Literal .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#markerDescription>
+  a owl:Property ;
+  rdfs:comment "Optional property. Marker description (e.g. CENTER OF HOLE IN STEEL PLATE)"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML - marker description"@en ;
+  rdfs:range <http://www.opengis.net/gml/3.2TimePositionType> .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#antennaRadomeType>
+  a owl:Property ;
+  rdfs:comment "Optional property. Radome Type (e.g. : NONE)"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Antenna from GeodesyML - antenna radome type"@en ;
+  rdfs:range <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#igsRadomeModelCodeType> .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#satelliteSystem>
+  a owl:Property ;
+  rdfs:comment "Optional property. Satellite system (e.g GPS+GLO+GAL)"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#GNSSReceiver> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Receiver from GeodesyML - satellite system"@en ;
+  rdfs:range <http://www.opengis.net/gml/3.2CodeType> .
+
+dc:creator
+  a rdf:Property ;
+  ns0:usageNote "Optional property. This property refers to an entity primarily responsible for making the resource"@en, "Mandatory property. This property refers to an entity primarily responsible for making the resource"@en ;
+  rdfs:label "Dataset - creator"@en, "Data Catalogue- creator"@en .
+
+<https://gnss.be/vocab/2023/gnss#pgmRunBy>
+  a owl:Property ;
+  rdfs:comment "Optional property. Name of the agency operating the software generating the RINEX file"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#PGM> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "PGM - operated by"@en ;
+  rdfs:range rdfs:Literal .
+
+skos:Concept
+  a rdfs:Class ;
+  ns0:usageNote "Recommended class. A subject of a Dataset."@en ;
+  rdfs:isDefinedBy "http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme"^^xsd:string ;
+  rdfs:label "Category"@en .
+
+dcat:endpointDescription
+  a rdf:Property ;
+  ns0:usageNote "Recommended property.  A description of the services available via the end-points, including their operations, parameters etc "@en ;
+  rdfs:label "Data Service - endpoint description"@en .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#geologicCharacteristic>
+  a owl:Property ;
+  rdfs:comment "Optional property. Geologic characteristic (e.g. SAND)"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML - geologic characteristic"@en ;
+  rdfs:range rdfs:Literal .
+
+dc:temporal
+  a rdf:Property ;
+  ns0:usageNote "Recommended property. This property refers to a temporal period covered by the Dataset."@en ;
+  rdfs:label "Dataset - temporal coverage"@en .
+
+dcat:contactPoint
+  a rdf:Property ;
+  ns0:usageNote "Recommended property. This property contains contact information that can be used for sending comments about the Dataset."@en ;
+  rdfs:label "Dataset - contact point"@en .
+
+dc:identifier
+  a rdf:Property ;
+  ns0:usageNote "Mandatory property. This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue."@en ;
+  rdfs:label "Dataset - identifier"@en .
+
+<https://gnss.be/vocab/2023/gnss#monument>
+  a owl:Property ;
+  rdfs:comment "Recommended property. Station monument"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#Station> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "Station -monument"@en ;
+  rdfs:range <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument> .
+
+dcat:endpointURL
+  a rdf:Property ;
+  ns0:usageNote "Mandatory property. The root location or primary endpoint of the service (an IRI)."@en ;
+  rdfs:label "Data Service - endpoint URL"@en .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#marker-arpUptEcc>
+  a owl:Property ;
+  rdfs:comment "Recommended property. Distance from the ARP to the marker - Up component"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Antenna from GeodesyML - marker-ARP Up Ecc."@en ;
+  rdfs:range xsd:float .
+
+<https://gnss.be/vocab/2023/gnss#faultZonesNearby>
+  a owl:Property ;
+  rdfs:comment "Optional property. Fault zones nearby (e.g. NO)"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument> ;
+  rdfs:isDefinedBy <https://www.geo.be/gnss-dcat-ap/vocabulary/gnss#> ;
+  rdfs:label "Monument from GeodesyML - fault zones nearby"@en ;
+  rdfs:range rdfs:Literal .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#marker-arpEastEcc>
+  a owl:Property ;
+  rdfs:comment "Recommended property. Distance from the ARP to the marker - East component"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Antenna from GeodesyML - marker-ARP East Ecc."@en ;
+  rdfs:range xsd:float .
+
+dcat:byteSize
+  a rdf:Property ;
+  ns0:usageNote "Optional property. This property contains the size of a Distribution in bytes. This property should be defined as rdfs:Lideral typed as xsd:date or xsd:dateTime."@en ;
+  rdfs:label "Distribution - byte size"@en .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#dateInstalled>
+  a owl:Property ;
+  rdfs:comment "Optional property. Installation date (e.g. 2009-08-05T02:00:00Z)"@en, "Optional property. Receiver installation date e.g. 2020-05-01T00:00Z"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#GNSSReceiver>, <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Receiver from GeodesyML - installation date"@en, "Antenna from GeodesyML - date installed"@en ;
+  rdfs:range <http://www.opengis.net/gml/3.2TimePositionType> .
+
+<https://gnss.be/vocab/2023/gnss#receiver>
+  a owl:Property ;
+  rdfs:comment "Recommended property. Receiver information from the RINEX header"@en, "Optional property. Station receiver from GeodesyML"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#OBSHeader>, <https://gnss.be/vocab/2023/gnss#Station> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "Station -receiver"@en, "GNSS obs header - receiver as in OBSHeader"@en ;
+  rdfs:range <https://gnss.be/vocab/2023/gnss#Receiver>, <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Receiver> .
+
+dc:publisher
+  a rdf:Property ;
+  ns0:usageNote "Mandatory property. This property refers to an entity (organisation) responsible for making the Dataset available."@en, "Mandatory property. This property refers to an entity (organisation) responsible for making the Catalogue available."@en ;
+  rdfs:label "Dataset - publisher"@en, "Catalogue - publisher"@en .
+
+dc:issued
+  a rdf:Property ;
+  ns0:usageNote "Optional property. This property contains the date of formal issuance (e.g., publication) of the Distribution. This property should be defined as rdfs:Lideral typed as xsd:date or xsd:dateTime."@en, "Recommended property. This property contains the date of formal issuance (e.g., publication) of the Catalogue. This property should be defined as rdfs:Lideral typed as xsd:date or xsd:dateTime."@en ;
+  rdfs:label "Catalogue - release date"@en, "Distribution - release date"@en .
+
+<https://gnss.be/vocab/2023/gnss#pgmDate>
+  a owl:Property ;
+  rdfs:comment "Optional property. PGM generation date as from the RINEX header"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#PGM> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "PGM - date"@en ;
+  rdfs:range xsd:date .
+
+dcat:dataset
+  a rdf:Property ;
+  ns0:usageNote "Recommended property. This property links the Catalogue with a Dataset that is part of the Catalogue."@en ;
+  rdfs:label "Catalogue - dataset"@en .
+
+<https://gnss.be/vocab/2023/gnss#stationDOI>
+  a owl:Property ;
+  rdfs:comment "Optional property. Station identifier (e.g. MAST/ADS, DataCite, DOI, EZID or W3ID)"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#Station> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "Station - DOI"@en ;
+  rdfs:range ns1:Identifier .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#foundationDepth>
+  a owl:Property ;
+  rdfs:comment "Optional property. Depth of monument foundation (e.g. : 3 m)"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML - monument foundation depth"@en ;
+  rdfs:range xsd:double .
+
+dc:description
+  a rdf:Property ;
+  ns0:usageNote "Mandatory property. This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description."@en, "Mandatory property. This property contains a free-text account of the Catalogue. This property can be repeated for parallel language versions of the description."@en ;
+  rdfs:label "Catalogue - description"@en, "Dataset - description"@en .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#dateRemoved>
+  a owl:Property ;
+  rdfs:comment "Optional property. Receiver removal date e.g.2021-04-11T12:00Z"@en, "Optional property. Removal date (e.g. 2010-05-03T01:30:00Z)"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#GNSSReceiver>, <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Receiver from GeodesyML - removal date"@en, "Antenna from GeodesyML - igsModelCode"@en ;
+  rdfs:range <http://www.opengis.net/gml/3.2TimePositionType> .
+
+<https://gnss.be/vocab/2023/gnss#igsModelCode>
+  a owl:Property ;
+  rdfs:comment "Mandatory property. Antenna and radome name (e.g. TRM57971.00 NONE)"@en, "Mandatory property. Antenna name (e.g. TRM57971.00 NONE)"@en, "Mandatory property. Receiver name (e.g. TRIMBLE NETR9)"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#Receiver>, <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#GNSSAntenna>, <https://gnss.be/vocab/2023/gnss#Antenna> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "Antenna - IGS model code"@en, "Receiver - IGS model code"@en, "Antenna from GeodesyML - IGS model code"@en ;
+  rdfs:range rdfs:Literal .
+
+<https://gnss.be/vocab/2023/gnss#nineCharacterID>
+  a owl:Property ;
+  rdfs:comment "Mandatory property. 9-char id of the station"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#Station> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "Station - nine char id"@en ;
+  rdfs:range rdfs:Literal .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#firmwareVersion>
+  a owl:Property ;
+  rdfs:comment "Recommended property. Firmware version (e.g. 5.37)"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#GNSSReceiver> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Receiver from GeodesyML - firmware version"@en ;
+  rdfs:range rdfs:Literal .
+
+<https://gnss.be/vocab/2023/gnss#isVersionOf>
+  a owl:Property ;
+  rdfs:comment "Optional property. Related gnss:OBSHeader of which the described header is a version, edition or adaptation"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#OBSHeader> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "GNSS obs header - version of GNSS obs header"@en ;
+  rdfs:range <https://gnss.be/vocab/2023/gnss#OBSHeader> .
+
+foaf:name
+  a rdf:Property ;
+  ns0:usageNote "Mandatory property. This property contains a name of the agent. This property can be repeated for different versions of the name (e.g. the name in different languages)"@en ;
+  rdfs:label "Agent - name"@en .
+
+dc:spatial
+  a rdf:Property ;
+  ns0:usageNote "Recommended property. This property refers to a geographic region covered by the Dataset."@en, "Recommended property. This property refers to a geographical area covered by the Catalogue."@en ;
+  rdfs:label "Catalogue - spatial"@en, "Dataset - spatial/ geographical coverage"@en .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#notes>
+  a owl:Property ;
+  rdfs:comment "Optional property. Additional information"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML - notes"@en ;
+  rdfs:range rdfs:Literal .
+
+dcat:downloadURL
+  a rdf:Property ;
+  ns0:usageNote "Optional property. This property contains a URL that is a direct link to a downloadable file in a given format."@en ;
+  rdfs:label "Distribution - download URL"@en .
+
+dc:rights
+  a rdf:Property ;
+  ns0:usageNote "Optional property. This property refers to a statement that specifies rights associated with the Catalogue."@en, "Optional property. This property refers to a statement that specifies rights associated with the Distribution."@en ;
+  rdfs:label "Distribution - rights"@en, "Catalogue - rights"@en .
+
+<https://gnss.be/vocab/2023/gnss#pgm>
+  a owl:Property ;
+  rdfs:comment "Optional property. Info regarding the software used to generate the file as from the RINEX header"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#OBSHeader> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "GNSS obs header - pgm"@en ;
+  rdfs:range <https://gnss.be/vocab/2023/gnss#PGM> .
+
+dcat:theme
+  a rdf:Property ;
+  ns0:usageNote "Recommended property. This property refers to a category of the Dataset. A Dataset may be associated with multiple themes. Subproperty of dct:subject.<"@en ;
+  rdfs:label "Dataset - theme/categor"@en .
+
+<http://spdx.org/rdf/terms#Checksum>
+  a rdf:Property ;
+  ns0:usageNote "Optional property. This property provides a mechanism that can be used to verify that the contents of a distribution have not changed."@en ;
+  rdfs:label "Distribution - checksum"@en .
+
+dc:isVersionOf
+  a rdf:Property ;
+  ns0:usageNote "Optional property. This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation."@en ;
+  rdfs:label "Dataset - is version of"@en .
+
+dqv:hasQualityMeasurement
+  a rdf:Property ;
+  ns0:usageNote "Optional property. This property refers to a quality measurement performed on Dataset."@en ;
+  rdfs:label "Dataset - has quality measurement"@en .
+
+<https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#fractureSpacing>
+  a owl:Property ;
+  rdfs:comment "Optional property. Fracture spacing (e.g. 0 cm)"@en ;
+  rdfs:domain <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument> ;
+  rdfs:isDefinedBy <https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#> ;
+  rdfs:label "Monument from GeodesyML - fracture spacing"@en ;
+  rdfs:range xsd:double .
+
+<https://gnss.be/vocab/2023/gnss#obsHeader>
+  a owl:Property ;
+  rdfs:comment "Recommended property. Metadata for the RINEX header"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#OBSData> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "GNSS obs data - header"@en ;
+  rdfs:range <https://gnss.be/vocab/2023/gnss#OBSHeader> .
+
+<https://gnss.be/vocab/2023/gnss#pgmNotes>
+  a owl:Property ;
+  rdfs:comment "Optional property. Comment (e.g. THIS RINEX FILE IS CREATED FROM LB2 DATA)"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#PGM> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "PGM - notes"@en ;
+  rdfs:range rdfs:Literal .
+
+<https://gnss.be/vocab/2023/gnss#sitelog>
+  a owl:Property ;
+  rdfs:comment "Optional property. URL resource for the sitelog file"@en ;
+  rdfs:domain <https://gnss.be/vocab/2023/gnss#Station> ;
+  rdfs:isDefinedBy <https://gnss.be/vocab/2023/gnss#> ;
+  rdfs:label "Station - sitelog"@en ;
+  rdfs:range dcat:Distribution .
