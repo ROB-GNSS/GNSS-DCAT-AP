@@ -22,7 +22,7 @@
   dc:type <http://purl.org/adms/assettype/Ontology> ;
   ns0:preferredNamespacePrefix "gnss"^^xsd:string ;
   owl:versionInfo "0.3.0"^^xsd:string ;
-  ns1:versionNotes "Change log for GNSS-DCAT-AP v0.2: updated draft version including new Dataset optional property uploaded as .docx, .pdf and .ttl and aligned with DCAT-AP v.2.1.0"@en, "Change namespace/datatype"@en ;
+  ns1:versionNotes "Change log for GNSS-DCAT-AP v0.3: updated draft version including new Dataset and Distribution recommended properties and updated gnss namespace"@en, "Change namespace/datatype"@en ;
   foaf:homepage <https://www.fair-gnss.oma.be> .
 
 <https://gnss.be/vocab/2023/gnss#Antenna>

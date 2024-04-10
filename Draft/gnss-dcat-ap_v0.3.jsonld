@@ -66,7 +66,7 @@
         "http://www.w3.org/ns/adms#versionNotes": [
             {
                 "@language": "en",
-                "@value": "Change log for GNSS-DCAT-AP v0.2: updated draft version including new Dataset optional property uploaded as .docx, .pdf and .ttl and aligned with DCAT-AP v.2.1.0"
+                "@value": "Change log for GNSS-DCAT-AP v0.3: updated draft version including new Dataset and Distribution recommended properties and updated gnss namespace"
             },
             {
                 "@language": "en",
