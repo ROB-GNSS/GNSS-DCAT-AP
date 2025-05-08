@@ -1,4 +1,4 @@
-@prefix ns0: <https://gnss.be/vocab/2023/gnss#> .
+@prefix ns0: <https://gnss.be/vocab/2025/gnss#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ns1: <https://www.w3.org/ns/dcat#> .
 @prefix dc: <http://purl.org/dc/terms/> .
