@@ -30,6 +30,10 @@
             {
                 "@type": "http://www.w3.org/2001/XMLSchema#date",
                 "@value": "2024-04-08"
+            },
+            {
+                "@type": "http://www.w3.org/2001/XMLSchema#date",
+                "@value": "2025-05-08"
             }
         ],
         "http://purl.org/dc/terms/publisher": [
@@ -60,13 +64,13 @@
         ],
         "http://www.w3.org/2002/07/owl#versionInfo": [
             {
-                "@value": "0.3.0"
+                "@value": "0.4.0"
             }
         ],
         "http://www.w3.org/ns/adms#versionNotes": [
             {
                 "@language": "en",
-                "@value": "Change log for GNSS-DCAT-AP v0.3: updated draft version including new Dataset and Distribution recommended properties and updated gnss namespace"
+                "@value": "Alignment with DCAT-AP 3.0.0, use of registered PIDs (w3id), fixes and updates in the documentation"
             },
             {
                 "@language": "en",
@@ -80,7 +84,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#Antenna",
+        "@id": "https://gnss.be/vocab/2025/gnss#Antenna",
         "@type": [
             "http://www.w3.org/2002/07/owl#Class"
         ],
@@ -92,7 +96,7 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -103,7 +107,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#agency",
+        "@id": "https://gnss.be/vocab/2025/gnss#agency",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -115,12 +119,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#OBSHeader"
+                "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -136,7 +140,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#markerNumber",
+        "@id": "https://gnss.be/vocab/2025/gnss#markerNumber",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -148,12 +152,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#OBSHeader"
+                "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -199,7 +203,7 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@value": "http://www.w3.org/TR/vocab-dcat-2/#Class:Catalog"
+                "@value": "http://www.w3.org/TR/vocab-dcat-3/#Class:Catalog"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -210,7 +214,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#compressFormatType",
+        "@id": "https://gnss.be/vocab/2025/gnss#compressFormatType",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -222,12 +226,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#OBSData"
+                "@id": "https://gnss.be/vocab/2025/gnss#OBSData"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -266,7 +270,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#frequency",
+        "@id": "https://gnss.be/vocab/2025/gnss#frequency",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -278,12 +282,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#OBSData"
+                "@id": "https://gnss.be/vocab/2025/gnss#OBSData"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -299,7 +303,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#Station",
+        "@id": "https://gnss.be/vocab/2025/gnss#Station",
         "@type": [
             "http://www.w3.org/2002/07/owl#Class"
         ],
@@ -311,7 +315,7 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -340,7 +344,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#interval",
+        "@id": "https://gnss.be/vocab/2025/gnss#interval",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -352,12 +356,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#OBSHeader"
+                "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -385,7 +389,7 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@value": "https://www.w3.org/TR/vocab-dcat-2/#Class:Data_Service"
+                "@value": "https://www.w3.org/TR/vocab-dcat-3/#Class:Data_Service"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -419,7 +423,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#antenna",
+        "@id": "https://gnss.be/vocab/2025/gnss#antenna",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -435,15 +439,15 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#Station"
+                "@id": "https://gnss.be/vocab/2025/gnss#Station"
             },
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#OBSHeader"
+                "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -458,7 +462,7 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#range": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#Antenna"
+                "@id": "https://gnss.be/vocab/2025/gnss#Antenna"
             },
             {
                 "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna"
@@ -484,7 +488,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#rinexVersion",
+        "@id": "https://gnss.be/vocab/2025/gnss#rinexVersion",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -496,12 +500,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#OBSHeader"
+                "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -517,7 +521,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#gnss:marker-arpNorthEcc",
+        "@id": "https://gnss.be/vocab/2025/gnss#gnss:marker-arpNorthEcc",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -529,12 +533,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#Antenna"
+                "@id": "https://gnss.be/vocab/2025/gnss#Antenna"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -576,7 +580,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#gnss:marker-arpUpEcc",
+        "@id": "https://gnss.be/vocab/2025/gnss#gnss:marker-arpUpEcc",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -588,12 +592,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#Antenna"
+                "@id": "https://gnss.be/vocab/2025/gnss#Antenna"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -627,7 +631,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#compressFormat",
+        "@id": "https://gnss.be/vocab/2025/gnss#compressFormat",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -639,12 +643,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#OBSData"
+                "@id": "https://gnss.be/vocab/2025/gnss#OBSData"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -690,7 +694,7 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#OBSHeader"
+                "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -854,7 +858,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#geodesyml",
+        "@id": "https://gnss.be/vocab/2025/gnss#geodesyml",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -866,23 +870,23 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#Station"
+                "@id": "https://gnss.be/vocab/2025/gnss#Station"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
             {
                 "@language": "en",
-                "@value": "Station -geodesyML file"
+                "@value": "Station - geodesyML file"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#range": [
             {
-                "@id": "http://www.w3.org/ns/dcat#Distribution"
+                "@id": "https://schema.org/DataDownload"
             }
         ]
     },
@@ -946,7 +950,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#format",
+        "@id": "https://gnss.be/vocab/2025/gnss#format",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -958,12 +962,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#OBSData"
+                "@id": "https://gnss.be/vocab/2025/gnss#OBSData"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -1012,7 +1016,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#issued",
+        "@id": "https://gnss.be/vocab/2025/gnss#issued",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -1024,12 +1028,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#OBSHeader"
+                "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -1078,7 +1082,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#OBSData",
+        "@id": "https://gnss.be/vocab/2025/gnss#OBSData",
         "@type": [
             "http://www.w3.org/2002/07/owl#Class"
         ],
@@ -1090,7 +1094,7 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -1101,7 +1105,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#obsData",
+        "@id": "https://gnss.be/vocab/2025/gnss#obsData",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -1118,7 +1122,7 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -1129,12 +1133,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#range": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#OBSData"
+                "@id": "https://gnss.be/vocab/2025/gnss#OBSData"
             }
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#station",
+        "@id": "https://gnss.be/vocab/2025/gnss#station",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -1146,7 +1150,7 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#OBSData"
+                "@id": "https://gnss.be/vocab/2025/gnss#OBSData"
             },
             {
                 "@id": "http://www.w3.org/ns/dcat#Dataset"
@@ -1154,7 +1158,7 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -1165,7 +1169,7 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#range": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#Station"
+                "@id": "https://gnss.be/vocab/2025/gnss#Station"
             }
         ]
     },
@@ -1220,7 +1224,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#marker-arpUpEcc",
+        "@id": "https://gnss.be/vocab/2025/gnss#marker-arpUpEcc",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -1232,12 +1236,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#Antenna"
+                "@id": "https://gnss.be/vocab/2025/gnss#Antenna"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -1253,7 +1257,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#pgmName",
+        "@id": "https://gnss.be/vocab/2025/gnss#pgmName",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -1265,12 +1269,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#PGM"
+                "@id": "https://gnss.be/vocab/2025/gnss#PGM"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -1338,7 +1342,7 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#OBSHeader"
+                "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -1363,7 +1367,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#markerName",
+        "@id": "https://gnss.be/vocab/2025/gnss#markerName",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -1375,12 +1379,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#OBSHeader"
+                "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -1441,7 +1445,7 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@value": "http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-distribution"
+                "@value": "https://www.w3.org/TR/vocab-dcat-3/#Class:Distribution"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -1452,7 +1456,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#manufacturerSerialNumber",
+        "@id": "https://gnss.be/vocab/2025/gnss#manufacturerSerialNumber",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -1468,15 +1472,15 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#Antenna"
+                "@id": "https://gnss.be/vocab/2025/gnss#Antenna"
             },
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#Receiver"
+                "@id": "https://gnss.be/vocab/2025/gnss#Receiver"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -1666,7 +1670,7 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@value": "http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme"
+                "@value": "https://www.w3.org/TR/vocab-dcat-3/#Property:resource_theme"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -1797,7 +1801,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#gnss:marker-arpEastEcc",
+        "@id": "https://gnss.be/vocab/2025/gnss#gnss:marker-arpEastEcc",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -1809,12 +1813,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#Antenna"
+                "@id": "https://gnss.be/vocab/2025/gnss#Antenna"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -1856,7 +1860,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#observer",
+        "@id": "https://gnss.be/vocab/2025/gnss#observer",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -1868,12 +1872,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#OBSHeader"
+                "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -1923,7 +1927,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#OBSHeader",
+        "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader",
         "@type": [
             "http://www.w3.org/2002/07/owl#Class"
         ],
@@ -1935,7 +1939,7 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -2143,7 +2147,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#temporal",
+        "@id": "https://gnss.be/vocab/2025/gnss#temporal",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -2155,12 +2159,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#OBSHeader"
+                "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -2176,7 +2180,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#firmwareVersion",
+        "@id": "https://gnss.be/vocab/2025/gnss#firmwareVersion",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -2188,12 +2192,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#Receiver"
+                "@id": "https://gnss.be/vocab/2025/gnss#Receiver"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -2410,7 +2414,7 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@value": "http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-dataset"
+                "@value": "https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -2513,7 +2517,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#pgmRunBy",
+        "@id": "https://gnss.be/vocab/2025/gnss#pgmRunBy",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -2525,12 +2529,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#PGM"
+                "@id": "https://gnss.be/vocab/2025/gnss#PGM"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -2558,7 +2562,7 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@value": "http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme"
+                "@value": "https://www.w3.org/TR/vocab-dcat-3/#Property:resource_theme"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -2656,7 +2660,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#Receiver",
+        "@id": "https://gnss.be/vocab/2025/gnss#Receiver",
         "@type": [
             "http://www.w3.org/2002/07/owl#Class"
         ],
@@ -2668,7 +2672,7 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -2697,7 +2701,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#monument",
+        "@id": "https://gnss.be/vocab/2025/gnss#monument",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -2709,12 +2713,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#Station"
+                "@id": "https://gnss.be/vocab/2025/gnss#Station"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -2781,7 +2785,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#faultZonesNearby",
+        "@id": "https://gnss.be/vocab/2025/gnss#faultZonesNearby",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -2909,7 +2913,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#receiver",
+        "@id": "https://gnss.be/vocab/2025/gnss#receiver",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -2925,15 +2929,15 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#OBSHeader"
+                "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
             },
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#Station"
+                "@id": "https://gnss.be/vocab/2025/gnss#Station"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -2948,7 +2952,7 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#range": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#Receiver"
+                "@id": "https://gnss.be/vocab/2025/gnss#Receiver"
             },
             {
                 "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Receiver"
@@ -3026,7 +3030,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#PGM",
+        "@id": "https://gnss.be/vocab/2025/gnss#PGM",
         "@type": [
             "http://www.w3.org/2002/07/owl#Class"
         ],
@@ -3038,7 +3042,7 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -3049,7 +3053,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#pgmDate",
+        "@id": "https://gnss.be/vocab/2025/gnss#pgmDate",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -3061,12 +3065,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#PGM"
+                "@id": "https://gnss.be/vocab/2025/gnss#PGM"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -3100,7 +3104,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#stationDOI",
+        "@id": "https://gnss.be/vocab/2025/gnss#stationDOI",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -3112,12 +3116,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#Station"
+                "@id": "https://gnss.be/vocab/2025/gnss#Station"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -3236,7 +3240,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#igsModelCode",
+        "@id": "https://gnss.be/vocab/2025/gnss#igsModelCode",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -3256,18 +3260,18 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#Receiver"
+                "@id": "https://gnss.be/vocab/2025/gnss#Receiver"
             },
             {
                 "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#GNSSAntenna"
             },
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#Antenna"
+                "@id": "https://gnss.be/vocab/2025/gnss#Antenna"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -3291,7 +3295,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#nineCharacterID",
+        "@id": "https://gnss.be/vocab/2025/gnss#nineCharacterID",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -3303,12 +3307,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#Station"
+                "@id": "https://gnss.be/vocab/2025/gnss#Station"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -3357,7 +3361,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#isVersionOf",
+        "@id": "https://gnss.be/vocab/2025/gnss#isVersionOf",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -3369,12 +3373,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#OBSHeader"
+                "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -3385,7 +3389,7 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#range": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#OBSHeader"
+                "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
             }
         ]
     },
@@ -3511,7 +3515,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#pgm",
+        "@id": "https://gnss.be/vocab/2025/gnss#pgm",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -3523,12 +3527,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#OBSHeader"
+                "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -3539,7 +3543,7 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#range": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#PGM"
+                "@id": "https://gnss.be/vocab/2025/gnss#PGM"
             }
         ]
     },
@@ -3649,7 +3653,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#obsHeader",
+        "@id": "https://gnss.be/vocab/2025/gnss#obsHeader",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -3661,12 +3665,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#OBSData"
+                "@id": "https://gnss.be/vocab/2025/gnss#OBSData"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -3677,12 +3681,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#range": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#OBSHeader"
+                "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
             }
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#pgmNotes",
+        "@id": "https://gnss.be/vocab/2025/gnss#pgmNotes",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -3694,12 +3698,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#PGM"
+                "@id": "https://gnss.be/vocab/2025/gnss#PGM"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -3715,7 +3719,7 @@
         ]
     },
     {
-        "@id": "https://gnss.be/vocab/2023/gnss#sitelog",
+        "@id": "https://gnss.be/vocab/2025/gnss#sitelog",
         "@type": [
             "http://www.w3.org/2002/07/owl#Property"
         ],
@@ -3727,12 +3731,12 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#domain": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#Station"
+                "@id": "https://gnss.be/vocab/2025/gnss#Station"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
             {
-                "@id": "https://gnss.be/vocab/2023/gnss#"
+                "@id": "https://gnss.be/vocab/2025/gnss#"
             }
         ],
         "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -3743,7 +3747,7 @@
         ],
         "http://www.w3.org/2000/01/rdf-schema#range": [
             {
-                "@id": "http://www.w3.org/ns/dcat#Distribution"
+                "@id": "https://schema.org/DataDownload"
             }
         ]
     }

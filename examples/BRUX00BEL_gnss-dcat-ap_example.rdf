@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:ns0="https://gnss.be/vocab/2023/gnss#"
+    xmlns:ns0="https://gnss.be/vocab/2025/gnss#"
     xmlns:ns1="https://www.w3.org/ns/dcat#"
     xmlns:dc="http://purl.org/dc/terms/"
     xmlns:ns2="http://www.w3.org/ns/adms#">
