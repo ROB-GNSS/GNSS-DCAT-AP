@@ -19,29 +19,29 @@
     <dc:title xml:lang="en">GNSS-DCAT-AP: an extension of the DCAT Application Profile for GNSS observation data</dc:title>
     <dc:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
     <ns0:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gnss</ns0:preferredNamespacePrefix>
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.3.0</owl:versionInfo>
-    <ns1:versionNotes xml:lang="en">Change log for GNSS-DCAT-AP v0.3: updated draft version including new Dataset and Distribution recommended properties and updated gnss namespace</ns1:versionNotes>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.4.0</owl:versionInfo>
+    <ns1:versionNotes xml:lang="en">Change log for GNSS-DCAT-AP v0.4: Aligned with DCAT-AP v.3.0.0</ns1:versionNotes>
     <ns1:versionNotes xml:lang="en">Change namespace/datatype</ns1:versionNotes>
     <foaf:homepage rdf:resource="https://www.fair-gnss.oma.be"/>
   </owl:Ontology>
 
-  <owl:Class rdf:about="https://gnss.be/vocab/2023/gnss#Antenna">
+  <owl:Class rdf:about="https://gnss.be/vocab/2025/gnss#Antenna">
     <rdfs:comment xml:lang="en">Recommended class. Domain specific vocabulary for the antenna associated with gnss:Station</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">Station antenna</rdfs:label>
   </owl:Class>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#agency">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#agency">
     <rdfs:comment xml:lang="en">Optional property. Agency as in the RINEX header (e.g., ROB)</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#OBSHeader"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#OBSHeader"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">GNSS obs header - agency</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   </owl:Property>
 
-  <owl:Class rdf:about="https://gnss.be/vocab/2023/gnss#OBSHeader">
+  <owl:Class rdf:about="https://gnss.be/vocab/2025/gnss#OBSHeader">
     <rdfs:comment xml:lang="en">Recommended class. Domain specific vocabulary for the information in the RINEX observation file header associated with gnss:OBSData</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">GNSS observation data header</rdfs:label>
   </owl:Class>
 
@@ -51,10 +51,10 @@
     <rdfs:label xml:lang="en">Literal</rdfs:label>
   </rdfs:Class>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#markerNumber">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#markerNumber">
     <rdfs:comment xml:lang="en">Optional property. DOMES number</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#OBSHeader"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#OBSHeader"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">GNSS obs header - marker number</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   </owl:Property>
@@ -66,21 +66,21 @@
 
   <rdfs:Class rdf:about="http://www.w3.org/ns/dcat#Catalog">
     <ns0:usageNote xml:lang="en">Mandatory class. A catalogue or repository that hosts the Datasets being described.</ns0:usageNote>
-    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/TR/vocab-dcat-2/#Class:Catalog</rdfs:isDefinedBy>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/TR/vocab-dcat-3/#Class:Catalog</rdfs:isDefinedBy>
     <rdfs:label xml:lang="en">Catalogue</rdfs:label>
   </rdfs:Class>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#compressFormatType">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#compressFormatType">
     <rdfs:comment xml:lang="en">Optional property. Crinex Version (e.g. 3.0)</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#OBSData"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#OBSData"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">GNSS obs data  - compression format type</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   </owl:Property>
 
-  <owl:Class rdf:about="https://gnss.be/vocab/2023/gnss#OBSData">
+  <owl:Class rdf:about="https://gnss.be/vocab/2025/gnss#OBSData">
     <rdfs:comment xml:lang="en">Recommended class. Domain specific vocabulary for RINEX observation files</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">GNSS observation data</rdfs:label>
   </owl:Class>
 
@@ -90,17 +90,17 @@
     <rdfs:label xml:lang="en">Antenna from GeodesyML</rdfs:label>
   </owl:Class>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#frequency">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#frequency">
     <rdfs:comment xml:lang="en">Optional property. Daily/hourly RINEX files</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#OBSData"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#OBSData"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">GNSS obs data  - frequency</rdfs:label>
     <rdfs:range rdf:resource="http://purl.org/dc/terms/Frequency"/>
   </owl:Property>
 
-  <owl:Class rdf:about="https://gnss.be/vocab/2023/gnss#Station">
+  <owl:Class rdf:about="https://gnss.be/vocab/2025/gnss#Station">
     <rdfs:comment xml:lang="en">Recommended class. Domain specific vocabulary for station information</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">Station</rdfs:label>
   </owl:Class>
 
@@ -109,29 +109,29 @@
     <rdfs:label xml:lang="en">Dataset - keyword/tag</rdfs:label>
   </rdf:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#interval">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#interval">
     <rdfs:comment xml:lang="en">Recommended property. 30 sec / 15 sec/1 sec</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#OBSHeader"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#OBSHeader"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">GNSS obs header - interval</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
   </owl:Property>
 
   <rdfs:Class rdf:about="http://www.w3.org/ns/dcat#DataService">
     <ns0:usageNote xml:lang="en">Recommended class. A collection of operations that provides access to one or more datasets or data processing functions.</ns0:usageNote>
-    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.w3.org/TR/vocab-dcat-2/#Class:Data_Service</rdfs:isDefinedBy>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.w3.org/TR/vocab-dcat-3/#Class:Data_Service</rdfs:isDefinedBy>
     <rdfs:label xml:lang="en">Data Service</rdfs:label>
   </rdfs:Class>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#antenna">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#antenna">
     <rdfs:comment xml:lang="en">Recommended property. Antenna information from the RINEX header</rdfs:comment>
     <rdfs:comment xml:lang="en">Optional property. Station antenna from GeodesyML</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#Station"/>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#OBSHeader"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#Station"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#OBSHeader"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">GNSS obs header - antenna</rdfs:label>
     <rdfs:label xml:lang="en">Station -antenna</rdfs:label>
-    <rdfs:range rdf:resource="https://gnss.be/vocab/2023/gnss#Antenna"/>
+    <rdfs:range rdf:resource="https://gnss.be/vocab/2025/gnss#Antenna"/>
     <rdfs:range rdf:resource="https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna"/>
   </owl:Property>
 
@@ -140,18 +140,18 @@
     <rdfs:label xml:lang="en">Data Service - serves dataset</rdfs:label>
   </rdf:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#rinexVersion">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#rinexVersion">
     <rdfs:comment xml:lang="en">Optional property. 	RINEX sub-version (text e.g 3.04)</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#OBSHeader"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#OBSHeader"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">GNSS obs header - RINEX sub-version</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   </owl:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#gnss:marker-arpNorthEcc">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#gnss:marker-arpNorthEcc">
     <rdfs:comment xml:lang="en">Recommended property. Distance from the ARP  to the marker - North component</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#Antenna"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#Antenna"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">Antenna - marker-ARP North Ecc.</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
   </owl:Property>
@@ -163,10 +163,10 @@
     <rdfs:label xml:lang="en">Distribution - linked schemas</rdfs:label>
   </rdf:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#gnss:marker-arpUpEcc">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#gnss:marker-arpUpEcc">
     <rdfs:comment xml:lang="en">Recommended property. Distance from the ARP  to the marker - Up component</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#Antenna"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#Antenna"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">Antenna - marker-ARP Up Ecc.</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
   </owl:Property>
@@ -176,10 +176,10 @@
     <rdfs:label xml:lang="en">Distribution - access URL</rdfs:label>
   </rdf:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#compressFormat">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#compressFormat">
     <rdfs:comment xml:lang="en">Optional property. Compressions format</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#OBSData"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#OBSData"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">GNSS obs data  - compression format</rdfs:label>
     <rdfs:range rdf:resource="http://purl.org/dc/terms/Standard"/>
   </owl:Property>
@@ -191,7 +191,7 @@
 
   <owl:Property rdf:about="http://www.w3.org/ns/adms#versionNotes">
     <rdfs:comment xml:lang="en">Optional property. Description of the differences between current and a previous version of the RINEX header</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#OBSHeader"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#OBSHeader"/>
     <rdfs:isDefinedBy>
       <rdf:Property rdf:about="http://www.w3.org/ns/adms#versioNotes">
         <ns0:usageNote xml:lang="en">Optional property. This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes.</ns0:usageNote>
@@ -246,17 +246,17 @@
     <rdfs:label xml:lang="en">Monument from GeodesyML</rdfs:label>
   </owl:Class>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#geodesyml">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#geodesyml">
     <rdfs:comment xml:lang="en">Optional property. URL resource for the GeodesyML file</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#Station"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#Station"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">Station -geodesyML file</rdfs:label>
-    <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <rdfs:range rdf:resource="https://schema.org/DataDownload"/>
   </owl:Property>
 
   <rdfs:Class rdf:about="http://www.w3.org/ns/dcat#Distribution">
     <ns0:usageNote xml:lang="en">Recommended class. A physical embodiment of the Dataset in a particular format, including visualisations of the data.</ns0:usageNote>
-    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-distribution</rdfs:isDefinedBy>
+    <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.w3.org/TR/vocab-dcat-3/#Class:Distribution</rdfs:isDefinedBy>
     <rdfs:label xml:lang="en">Distribution</rdfs:label>
   </rdfs:Class>
 
@@ -275,10 +275,10 @@
     <rdfs:range rdf:resource="http://www.opengis.net/gml/3.2CodeType"/>
   </owl:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#format">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#format">
     <rdfs:comment xml:lang="en">Recommended property. RINEX 2  / RINEX 3/ RINEX 4</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#OBSData"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#OBSData"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">GNSS obs data - format</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   </owl:Property>
@@ -291,10 +291,10 @@
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   </owl:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#issued">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#issued">
     <rdfs:comment xml:lang="en">Recommended property. Publication date of the header</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#OBSHeader"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#OBSHeader"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">GNSS obs header - issued date</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
   </owl:Property>
@@ -307,17 +307,17 @@
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
   </owl:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#obsData">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#obsData">
     <rdfs:comment xml:lang="en">Recommended property. GNSS station observation</rdfs:comment>
     <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">GNSS obs data - station</rdfs:label>
-    <rdfs:range rdf:resource="https://gnss.be/vocab/2023/gnss#OBSData"/>
+    <rdfs:range rdf:resource="https://gnss.be/vocab/2025/gnss#OBSData"/>
   </owl:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#station">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#station">
     <rdfs:comment xml:lang="en">Mandatory property. Station description</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#OBSData"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#OBSData"/>
     <rdfs:domain>
       <rdfs:Class rdf:about="http://www.w3.org/ns/dcat#Dataset">
         <ns0:usageNote xml:lang="en">Mandatory class. A conceptual entity that represents the information published.</ns0:usageNote>
@@ -326,9 +326,9 @@
       </rdfs:Class>
     </rdfs:domain>
 
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">GNSS obs data - station</rdfs:label>
-    <rdfs:range rdf:resource="https://gnss.be/vocab/2023/gnss#Station"/>
+    <rdfs:range rdf:resource="https://gnss.be/vocab/2025/gnss#Station"/>
   </owl:Property>
 
   <rdf:Property rdf:about="http://purl.org/dc/terms/title">
@@ -344,25 +344,25 @@
     <rdfs:label xml:lang="en">Category Scheme - title</rdfs:label>
   </rdf:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#marker-arpUpEcc">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#marker-arpUpEcc">
     <rdfs:comment xml:lang="en">Recommended property. Antenna and radome name (e.g. TRM57971.00 	NONE)</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#Antenna"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#Antenna"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">Antenna - marker-ARP Up Ecc.</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
   </owl:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#pgmName">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#pgmName">
     <rdfs:comment xml:lang="en">Mandatory property. Name of the software used to generate the RINEX file (e.g. Spider V7.1.1.7438 )</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#PGM"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#PGM"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">PGM - name</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   </owl:Property>
 
-  <owl:Class rdf:about="https://gnss.be/vocab/2023/gnss#PGM">
+  <owl:Class rdf:about="https://gnss.be/vocab/2025/gnss#PGM">
     <rdfs:comment xml:lang="en">Recommended class. Domain specific vocabulary for software used to generate the RINEX file associated with gnss:OBSData</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">GNSS observation data generating software</rdfs:label>
   </owl:Class>
 
@@ -384,17 +384,17 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Property"/>
     <ns0:usageNote xml:lang="en">Optional property. This property contains a version number or other version designation of the Dataset.</ns0:usageNote>
     <rdfs:comment xml:lang="en">Optional property. Version number or other version designation of the RINEX Header</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#OBSHeader"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#OBSHeader"/>
     <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
     <rdfs:label xml:lang="en">Dataset - version</rdfs:label>
     <rdfs:label xml:lang="en">GNSS obs header - version info</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   </rdf:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#markerName">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#markerName">
     <rdfs:comment xml:lang="en">Optional property. Marker name in the RINEX header (4-char/9-char id)</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#OBSHeader"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#OBSHeader"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">GNSS obs header -  marker name</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   </owl:Property>
@@ -407,20 +407,20 @@
     <rdfs:range rdf:resource="http://www.opengis.net/gml/3.2CodeType"/>
   </owl:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#manufacturerSerialNumber">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#manufacturerSerialNumber">
     <rdfs:comment xml:lang="en">Optional property. Serial number of the antenna</rdfs:comment>
     <rdfs:comment xml:lang="en">Optional property. Serial number for the receiver (e.g. 5608R50231)</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#Antenna"/>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#Receiver"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#Antenna"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#Receiver"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">Antenna - manufacturer serial number</rdfs:label>
     <rdfs:label xml:lang="en">Receiver - manufacturer serial number</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   </owl:Property>
 
-  <owl:Class rdf:about="https://gnss.be/vocab/2023/gnss#Receiver">
+  <owl:Class rdf:about="https://gnss.be/vocab/2025/gnss#Receiver">
     <rdfs:comment xml:lang="en">Recommended class Domain specific vocabulary for the receiver associated with gnss:Station</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">Station receiver</rdfs:label>
   </owl:Class>
 
@@ -495,10 +495,10 @@
     <rdfs:label xml:lang="en">Catalogue - homepage</rdfs:label>
   </rdf:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#gnss:marker-arpEastEcc">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#gnss:marker-arpEastEcc">
     <rdfs:comment xml:lang="en">Recommended property. Distance from the ARP  to the marker - East component</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#Antenna"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#Antenna"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">Antenna - marker-ARP East Ecc.</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   </owl:Property>
@@ -510,10 +510,10 @@
     <rdfs:label xml:lang="en">Distribution - update/modification date</rdfs:label>
   </rdf:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#observer">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#observer">
     <rdfs:comment xml:lang="en">Optional property. Observer as in the RINEX header (e.g., John Smith)</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#OBSHeader"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#OBSHeader"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">GNSS obs header - observer</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   </owl:Property>
@@ -578,18 +578,18 @@
     <rdfs:label xml:lang="en">Dataset - access rights</rdfs:label>
   </rdf:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#temporal">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#temporal">
     <rdfs:comment xml:lang="en">Recommended property. Temporal coverage from the RINEX header (start time/date-end time/date)</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#OBSHeader"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#OBSHeader"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">GNSS obs header - temporal coverage</rdfs:label>
     <rdfs:range rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
   </owl:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#firmwareVersion">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#firmwareVersion">
     <rdfs:comment xml:lang="en">Recommended property. Firmware version (e.g. 5.37)</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#Receiver"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#Receiver"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">Receiver - firmware version</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   </owl:Property>
@@ -658,10 +658,10 @@
     <rdfs:label xml:lang="en">Data Catalogue- creator</rdfs:label>
   </rdf:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#pgmRunBy">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#pgmRunBy">
     <rdfs:comment xml:lang="en">Optional property. Name of the agency operating the software generating the RINEX file</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#PGM"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#PGM"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">PGM - operated by</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   </owl:Property>
@@ -700,10 +700,10 @@
     <rdfs:label xml:lang="en">Dataset - identifier</rdfs:label>
   </rdf:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#monument">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#monument">
     <rdfs:comment xml:lang="en">Recommended property. Station monument</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#Station"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#Station"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">Station -monument</rdfs:label>
     <rdfs:range rdf:resource="https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument"/>
   </owl:Property>
@@ -721,7 +721,7 @@
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
   </owl:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#faultZonesNearby">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#faultZonesNearby">
     <rdfs:comment xml:lang="en">Optional property. Fault zones nearby (e.g. NO)</rdfs:comment>
     <rdfs:domain rdf:resource="https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument"/>
     <rdfs:isDefinedBy rdf:resource="https://www.geo.be/gnss-dcat-ap/vocabulary/gnss#"/>
@@ -753,15 +753,15 @@
     <rdfs:range rdf:resource="http://www.opengis.net/gml/3.2TimePositionType"/>
   </owl:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#receiver">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#receiver">
     <rdfs:comment xml:lang="en">Recommended property. Receiver information from the RINEX header</rdfs:comment>
     <rdfs:comment xml:lang="en">Optional property. Station receiver from GeodesyML</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#OBSHeader"/>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#Station"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#OBSHeader"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#Station"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">Station -receiver</rdfs:label>
     <rdfs:label xml:lang="en">GNSS obs header - receiver as in OBSHeader</rdfs:label>
-    <rdfs:range rdf:resource="https://gnss.be/vocab/2023/gnss#Receiver"/>
+    <rdfs:range rdf:resource="https://gnss.be/vocab/2025/gnss#Receiver"/>
     <rdfs:range rdf:resource="https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Receiver"/>
   </owl:Property>
 
@@ -779,10 +779,10 @@
     <rdfs:label xml:lang="en">Distribution - release date</rdfs:label>
   </rdf:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#pgmDate">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#pgmDate">
     <rdfs:comment xml:lang="en">Optional property. PGM generation date as from the RINEX header</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#PGM"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#PGM"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">PGM - date</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
   </owl:Property>
@@ -792,10 +792,10 @@
     <rdfs:label xml:lang="en">Catalogue - dataset</rdfs:label>
   </rdf:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#stationDOI">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#stationDOI">
     <rdfs:comment xml:lang="en">Optional property. Station identifier (e.g. MAST/ADS, DataCite, DOI, EZID or W3ID)</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#Station"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#Station"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">Station - DOI</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/ns/adms#Identifier"/>
   </owl:Property>
@@ -826,24 +826,24 @@
     <rdfs:range rdf:resource="http://www.opengis.net/gml/3.2TimePositionType"/>
   </owl:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#igsModelCode">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#igsModelCode">
     <rdfs:comment xml:lang="en">Mandatory property. Antenna and radome name (e.g. TRM57971.00 NONE)</rdfs:comment>
     <rdfs:comment xml:lang="en">Mandatory property. Antenna name (e.g. TRM57971.00 NONE)</rdfs:comment>
     <rdfs:comment xml:lang="en">Mandatory property. Receiver name (e.g. TRIMBLE NETR9)</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#Receiver"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#Receiver"/>
     <rdfs:domain rdf:resource="https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#GNSSAntenna"/>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#Antenna"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#Antenna"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">Antenna - IGS model code</rdfs:label>
     <rdfs:label xml:lang="en">Receiver - IGS model code</rdfs:label>
     <rdfs:label xml:lang="en">Antenna from GeodesyML - IGS model code</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   </owl:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#nineCharacterID">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#nineCharacterID">
     <rdfs:comment xml:lang="en">Mandatory property. 9-char id of the station</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#Station"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#Station"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">Station - nine char id</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   </owl:Property>
@@ -856,12 +856,12 @@
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   </owl:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#isVersionOf">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#isVersionOf">
     <rdfs:comment xml:lang="en">Optional property. Related gnss:OBSHeader of which the described header is a version, edition or adaptation</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#OBSHeader"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#OBSHeader"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">GNSS obs header - version of GNSS obs header</rdfs:label>
-    <rdfs:range rdf:resource="https://gnss.be/vocab/2023/gnss#OBSHeader"/>
+    <rdfs:range rdf:resource="https://gnss.be/vocab/2025/gnss#OBSHeader"/>
   </owl:Property>
 
   <rdf:Property rdf:about="http://xmlns.com/foaf/0.1/name">
@@ -896,12 +896,12 @@
     <rdfs:label xml:lang="en">Catalogue - rights</rdfs:label>
   </rdf:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#pgm">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#pgm">
     <rdfs:comment xml:lang="en">Optional property. Info regarding the software used to generate the file as from the RINEX header</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#OBSHeader"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#OBSHeader"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">GNSS obs header - pgm</rdfs:label>
-    <rdfs:range rdf:resource="https://gnss.be/vocab/2023/gnss#PGM"/>
+    <rdfs:range rdf:resource="https://gnss.be/vocab/2025/gnss#PGM"/>
   </owl:Property>
 
   <rdf:Property rdf:about="http://www.w3.org/ns/dcat#theme">
@@ -932,28 +932,28 @@
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
   </owl:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#obsHeader">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#obsHeader">
     <rdfs:comment xml:lang="en">Recommended property. Metadata for the RINEX header</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#OBSData"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#OBSData"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">GNSS obs data - header</rdfs:label>
-    <rdfs:range rdf:resource="https://gnss.be/vocab/2023/gnss#OBSHeader"/>
+    <rdfs:range rdf:resource="https://gnss.be/vocab/2025/gnss#OBSHeader"/>
   </owl:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#pgmNotes">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#pgmNotes">
     <rdfs:comment xml:lang="en">Optional property. Comment (e.g. THIS RINEX FILE IS CREATED FROM LB2 DATA)</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#PGM"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#PGM"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">PGM - notes</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
   </owl:Property>
 
-  <owl:Property rdf:about="https://gnss.be/vocab/2023/gnss#sitelog">
+  <owl:Property rdf:about="https://gnss.be/vocab/2025/gnss#sitelog">
     <rdfs:comment xml:lang="en">Optional property. URL resource for the sitelog file</rdfs:comment>
-    <rdfs:domain rdf:resource="https://gnss.be/vocab/2023/gnss#Station"/>
-    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2023/gnss#"/>
+    <rdfs:domain rdf:resource="https://gnss.be/vocab/2025/gnss#Station"/>
+    <rdfs:isDefinedBy rdf:resource="https://gnss.be/vocab/2025/gnss#"/>
     <rdfs:label xml:lang="en">Station - sitelog</rdfs:label>
-    <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    <rdfs:range rdf:resource="https://schema.org/DataDownload"/>
   </owl:Property>
 
 </rdf:RDF>
