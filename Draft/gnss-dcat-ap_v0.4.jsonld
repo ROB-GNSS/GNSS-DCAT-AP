@@ -1,0 +1,3831 @@
+[
+  {
+    "@id": "\"http://purl.org/dc/terms/description",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Optional property. This property contains a free-text account of the Catalogue. This property can be repeated for parallel language versions of the description.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Data Service - description",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://data.europa.eu/r5r/availability",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Recommended property. This property indicates how long it is planned to keep the Distribution of the Dataset available.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Distribution - availability",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/adms/assettype/Ontology"
+  },
+  {
+    "@id": "http://purl.org/adms/status/UnderDevelopment"
+  },
+  {
+    "@id": "http://purl.org/dc/terms/Frequency"
+  },
+  {
+    "@id": "http://purl.org/dc/terms/LicenseDocument",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Recommended class. A legal document giving official permission to do something with a resource.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@value": "http://dublincore.org/documents/2012/06/14/dcmi-terms/?v=terms#LicenseDocument"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Licence Document",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/PeriodOfTime"
+  },
+  {
+    "@id": "http://purl.org/dc/terms/Standard"
+  },
+  {
+    "@id": "http://purl.org/dc/terms/accessRights",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Recommended property. his property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public. A controlled vocabulary with three members (:public, :restricted, :non-public) will be created and maintained by the Publications Office of the EU.",
+        "@language": "en"
+      },
+      {
+        "@value": "Optional property. This property specifies whether the Dataset is open data, has access restrictions or is not public. ",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Data Service - access rights",
+        "@language": "en"
+      },
+      {
+        "@value": "Dataset - access rights",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/conformsTo",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Optional property. This property refers to an established schema to which the described Distribution conforms.",
+        "@language": "en"
+      },
+      {
+        "@value": "Optional property. This property refers to an implementing rule or other specification.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Dataset - conforms to",
+        "@language": "en"
+      },
+      {
+        "@value": "Distribution - linked schemas",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/creator",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Optional property. This property refers to an entity primarily responsible for making the resource",
+        "@language": "en"
+      },
+      {
+        "@value": "Mandatory property. This property refers to an entity primarily responsible for making the resource",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Dataset - creator",
+        "@language": "en"
+      },
+      {
+        "@value": "Data Catalogue- creator",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/description",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Mandatory property. This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description.",
+        "@language": "en"
+      },
+      {
+        "@value": "Mandatory property. This property contains a free-text account of the Catalogue. This property can be repeated for parallel language versions of the description.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Catalogue - description",
+        "@language": "en"
+      },
+      {
+        "@value": "Dataset - description",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/format",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Recommended property. This property refers to the file format of the Distribution.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Distribution - format",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/identifier",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Mandatory property. This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Dataset - identifier",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/isVersionOf",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Optional property. This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Dataset - is version of",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/issued",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Optional property. This property contains the date of formal issuance (e.g., publication) of the Distribution. This property should be defined as rdfs:Lideral typed as xsd:date or xsd:dateTime.",
+        "@language": "en"
+      },
+      {
+        "@value": "Recommended property. This property contains the date of formal issuance (e.g., publication) of the Catalogue. This property should be defined as rdfs:Lideral typed as xsd:date or xsd:dateTime.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Catalogue - release date",
+        "@language": "en"
+      },
+      {
+        "@value": "Distribution - release date",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/language",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Recommended property. This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the metadata is provided in multiple languages.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Catalogue - language",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/license",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Recommended property. This property refers to the licence under which the Catalogue can be used or reused.",
+        "@language": "en"
+      },
+      {
+        "@value": "Optional property. This property refers to the licence under which the Catalogue can be used or reused.",
+        "@language": "en"
+      },
+      {
+        "@value": "Recommended property. This property refers to the licence under which the Distribution is made available.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Distribution - licence",
+        "@language": "en"
+      },
+      {
+        "@value": "Catalogue - licence",
+        "@language": "en"
+      },
+      {
+        "@value": "Data Service - license",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/modified",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Optional property. This property contains the most recent date on which the Distribution was changed or modified. This property should be defined as rdfs:Lideral typed as xsd:date or xsd:dateTime.",
+        "@language": "en"
+      },
+      {
+        "@value": "Recommended property. This property contains the most recent date on which the Catalogue was modified. This property should be defined as rdfs:Lideral typed as xsd:date or xsd:dateTime.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Catalogue - update/modification date",
+        "@language": "en"
+      },
+      {
+        "@value": "Distribution - update/modification date",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/publisher",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Mandatory property. This property refers to an entity (organisation) responsible for making the Dataset available.",
+        "@language": "en"
+      },
+      {
+        "@value": "Mandatory property. This property refers to an entity (organisation) responsible for making the Catalogue available.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Dataset - publisher",
+        "@language": "en"
+      },
+      {
+        "@value": "Catalogue - publisher",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/rights",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Optional property. This property refers to a statement that specifies rights associated with the Catalogue.",
+        "@language": "en"
+      },
+      {
+        "@value": "Optional property. This property refers to a statement that specifies rights associated with the Distribution.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Distribution - rights",
+        "@language": "en"
+      },
+      {
+        "@value": "Catalogue - rights",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/spatial",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Recommended property. This property refers to a geographic region covered by the Dataset.",
+        "@language": "en"
+      },
+      {
+        "@value": "Recommended property. This property refers to a geographical area covered by the Catalogue.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Catalogue - spatial",
+        "@language": "en"
+      },
+      {
+        "@value": "Dataset - spatial/ geographical coverage",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/temporal",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Recommended property. This property refers to a temporal period covered by the Dataset.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Dataset - temporal coverage",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/title",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Mandatory property. This property contains a name given to the Data Service. This property can be repeated for parallel language versions of the name.",
+        "@language": "en"
+      },
+      {
+        "@value": "Mandatory property. This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name.",
+        "@language": "en"
+      },
+      {
+        "@value": "Mandatory property. This property contains a name given to the Dataset. This property can be repeated for parallel language versions of the name.",
+        "@language": "en"
+      },
+      {
+        "@value": "Optional property. This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description.",
+        "@language": "en"
+      },
+      {
+        "@value": "Mandatory property. This property contains a name of the category scheme. May be repeated for different versions of the name.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Data Service - title",
+        "@language": "en"
+      },
+      {
+        "@value": "Catalogue - title",
+        "@language": "en"
+      },
+      {
+        "@value": "Dataset - title",
+        "@language": "en"
+      },
+      {
+        "@value": "Distribution - title",
+        "@language": "en"
+      },
+      {
+        "@value": "Category Scheme - title",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/type",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Recommended property. This property refers to a type of licence, e.g. indicating ‘public domain’ or ‘royalties required’.",
+        "@language": "en"
+      },
+      {
+        "@value": "Recommended property. This property refers to a type of the agent that makes the Catalogue or Dataset available.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Licence Document - type",
+        "@language": "en"
+      },
+      {
+        "@value": "type",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://spdx.org/rdf/terms#Checksum",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Optional property. This property provides a mechanism that can be used to verify that the contents of a distribution have not changed.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Distribution - checksum",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.gnss.be"
+  },
+  {
+    "@id": "http://www.opengis.net/gml/3.2CodeType"
+  },
+  {
+    "@id": "http://www.opengis.net/gml/3.2TimePositionType"
+  },
+  {
+    "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+  },
+  {
+    "@id": "http://www.w3.org/2000/01/rdf-schema#Class"
+  },
+  {
+    "@id": "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Mandatory class. A literal value such as a string or integer; Literals may be typed, e.g. as a date according to xsd:date. Literals that contain human-readable text have an optional language tag as defined by BCP 47.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@value": "http://www.w3.org/TR/rdf-concepts/#section-Literals"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Literal",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2001/XMLSchema#date"
+  },
+  {
+    "@id": "http://www.w3.org/2001/XMLSchema#double"
+  },
+  {
+    "@id": "http://www.w3.org/2001/XMLSchema#float"
+  },
+  {
+    "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  },
+  {
+    "@id": "http://www.w3.org/2002/07/owl#Class"
+  },
+  {
+    "@id": "http://www.w3.org/2002/07/owl#Ontology"
+  },
+  {
+    "@id": "http://www.w3.org/2002/07/owl#Property"
+  },
+  {
+    "@id": "http://www.w3.org/2002/07/owl#versionInfo",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Optional property. This property contains a version number or other version designation of the Dataset.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Version number or other version designation of the RINEX Header",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#versionInfo"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Dataset - version",
+        "@language": "en"
+      },
+      {
+        "@value": "GNSS obs header - version info",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#Concept",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Recommended class. A subject of a Dataset.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@value": "http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Category",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Recommended class. A concept collection (e.g. controlled vocabulary) in which the Category is defined.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@value": "http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Category Scheme",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Optional property. This property contains a preferred label of the category. This property can be repeated for parallel language versions of the label.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Category - preferred label",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/adms#Asset"
+  },
+  {
+    "@id": "http://www.w3.org/ns/adms#Identifier"
+  },
+  {
+    "@id": "http://www.w3.org/ns/adms#identifier",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Optional property. This property refers to a secondary identifier of the Dataset, such as MAST/ADS, DataCite , DOI , EZID  or W3ID.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Dataset - other identifier",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/adms#versioNotes",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Optional property. This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Dataset - version notes",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/adms#versionNotes",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Description of the differences between current and a previous version of the RINEX header",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://www.w3.org/ns/adms#versioNotes"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "GNSS obs header - version notes",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/dcat#Catalog",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Mandatory class. A catalogue or repository that hosts the Datasets being described.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@value": "http://www.w3.org/TR/vocab-dcat-3/#Class:Catalog"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Catalogue",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/dcat#DataService",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Recommended class. A collection of operations that provides access to one or more datasets or data processing functions.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@value": "https://www.w3.org/TR/vocab-dcat-3/#Class:Data_Service"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Data Service",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/dcat#Dataset",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Mandatory class. A conceptual entity that represents the information published.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@value": "http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-dataset"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Dataset",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/dcat#Distribution",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Recommended class. A physical embodiment of the Dataset in a particular format, including visualisations of the data.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@value": "https://www.w3.org/TR/vocab-dcat-3/#Class:Distribution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Distribution",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/dcat#accessService",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Optional property. This property refers to a data service that gives access to the distribution of the dataset.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Distribution - access service",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/dcat#accessURL",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Mandatory property. This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Distribution - access URL",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/dcat#byteSize",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Optional property. This property contains the size of a Distribution in bytes. This property should be defined as rdfs:Lideral typed as xsd:date or xsd:dateTime.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Distribution - byte size",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/dcat#catalog",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Optional property. This property refers to  a catalog whose contents are of interest in the context of this catalog.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Data Catalogue - catalog ",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/dcat#compressFormat",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Optional property. This property refers to the format of the file in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Distribution - compression format",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/dcat#contactPoint",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Recommended property. This property contains contact information that can be used for sending comments about the Dataset.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Dataset - contact point",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/dcat#dataset",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Recommended property. This property links the Catalogue with a Dataset that is part of the Catalogue.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Catalogue - dataset",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/dcat#distribution",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Recommended property. This property links the Dataset to an available Distribution.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Dataset - dataset distribution",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/dcat#downloadURL",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Optional property. This property contains a URL that is a direct link to a downloadable file in a given format.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Distribution - download URL",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/dcat#endpointDescription",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Recommended property.  A description of the services available via the end-points, including their operations, parameters etc ",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Data Service - endpoint description",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/dcat#endpointURL",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Mandatory property. The root location or primary endpoint of the service (an IRI).",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Data Service - endpoint URL",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/dcat#keyword",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Recommended property. This property contains a keyword or tag describing the Dataset.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Dataset - keyword/tag",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/dcat#landingPage",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Optional property. This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Dataset - landing page",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/dcat#servesdataset",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Recommended property. A collection of data that this data service can distribute.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Data Service - serves dataset",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/dcat#service",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Recommended property. This property refers to a site or end-point that is listed in the catalog.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Data Catalogue - service",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/dcat#theme",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Recommended property. This property refers to a category of the Dataset. A Dataset may be associated with multiple themes. Subproperty of dct:subject.\u003C",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Dataset - theme/categor",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/dcat#themeTaxonomy",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Recommended property. This property refers to a knowledge organisation system used to classify the Catalogue's Datasets.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "themes",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/dqv#hasQualityMeasurement",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Optional property. This property refers to a quality measurement performed on Dataset.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Dataset - has quality measurement",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://xmlns.com/foaf/0.1/Agent",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Mandatory class. An entity that is associated with Catalogues and/or Datasets. If the Agent is an organisation, the use of the Organization Ontology  is recommended.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@value": "http://xmlns.com/foaf/spec/#term_Agent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Distribution",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://xmlns.com/foaf/0.1/homepage",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Recommended property. This property refers to a web page that acts as the main page for the Catalogue.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Catalogue - homepage",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "http://xmlns.com/foaf/0.1/name",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://purl.org/vocab/vann/usageNote": [
+      {
+        "@value": "Mandatory property. This property contains a name of the agent. This property can be repeated for different versions of the name (e.g. the name in different languages)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Agent - name",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#"
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#Antenna",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Recommended class. Domain specific vocabulary for the antenna associated with gnss:Station",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Station antenna",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#OBSData",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Recommended class. Domain specific vocabulary for RINEX observation files",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "GNSS observation data",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Recommended class. Domain specific vocabulary for the information in the RINEX observation file header associated with gnss:OBSData",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "GNSS observation data header",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#PGM",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Recommended class. Domain specific vocabulary for software used to generate the RINEX file associated with gnss:OBSData",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "GNSS observation data generating software",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#Receiver",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Recommended class Domain specific vocabulary for the receiver associated with gnss:Station",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Station receiver",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#Station",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Recommended class. Domain specific vocabulary for station information",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Station",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#agency",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Agency as in the RINEX header (e.g., ROB)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "GNSS obs header - agency",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#antenna",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Recommended property. Antenna information from the RINEX header",
+        "@language": "en"
+      },
+      {
+        "@value": "Optional property. Station antenna from GeodesyML",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#Station"
+      },
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "GNSS obs header - antenna",
+        "@language": "en"
+      },
+      {
+        "@value": "Station -antenna",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#Antenna"
+      },
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#compressFormat",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Compressions format",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#OBSData"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "GNSS obs data  - compression format",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/dc/terms/Standard"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#compressFormatType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Crinex Version (e.g. 3.0)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#OBSData"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "GNSS obs data  - compression format type",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#faultZonesNearby",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Fault zones nearby (e.g. NO)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.geo.be/gnss-dcat-ap/vocabulary/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Monument from GeodesyML - fault zones nearby",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#firmwareVersion",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Recommended property. Firmware version (e.g. 5.37)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#Receiver"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Receiver - firmware version",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#format",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Recommended property. RINEX 2  / RINEX 3/ RINEX 4",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#OBSData"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "GNSS obs data - format",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#frequency",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Daily/hourly RINEX files",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#OBSData"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "GNSS obs data  - frequency",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/dc/terms/Frequency"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#geodesyml",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. URL resource for the GeodesyML file",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#Station"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Station -geodesyML file",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://schema.org/DataDownload"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#gnss:marker-arpEastEcc",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Recommended property. Distance from the ARP  to the marker - East component",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#Antenna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Antenna - marker-ARP East Ecc.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#gnss:marker-arpNorthEcc",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Recommended property. Distance from the ARP  to the marker - North component",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#Antenna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Antenna - marker-ARP North Ecc.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#float"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#gnss:marker-arpUpEcc",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Recommended property. Distance from the ARP  to the marker - Up component",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#Antenna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Antenna - marker-ARP Up Ecc.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#float"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#igsModelCode",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Mandatory property. Antenna and radome name (e.g. TRM57971.00 NONE)",
+        "@language": "en"
+      },
+      {
+        "@value": "Mandatory property. Antenna name (e.g. TRM57971.00 NONE)",
+        "@language": "en"
+      },
+      {
+        "@value": "Mandatory property. Receiver name (e.g. TRIMBLE NETR9)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#Receiver"
+      },
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#GNSSAntenna"
+      },
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#Antenna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Antenna - IGS model code",
+        "@language": "en"
+      },
+      {
+        "@value": "Receiver - IGS model code",
+        "@language": "en"
+      },
+      {
+        "@value": "Antenna from GeodesyML - IGS model code",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#interval",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Recommended property. 30 sec / 15 sec/1 sec",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "GNSS obs header - interval",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#isVersionOf",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Related gnss:OBSHeader of which the described header is a version, edition or adaptation",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "GNSS obs header - version of GNSS obs header",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#issued",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Recommended property. Publication date of the header",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "GNSS obs header - issued date",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#manufacturerSerialNumber",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Serial number of the antenna",
+        "@language": "en"
+      },
+      {
+        "@value": "Optional property. Serial number for the receiver (e.g. 5608R50231)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#Antenna"
+      },
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#Receiver"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Antenna - manufacturer serial number",
+        "@language": "en"
+      },
+      {
+        "@value": "Receiver - manufacturer serial number",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#marker-arpUpEcc",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Recommended property. Antenna and radome name (e.g. TRM57971.00 \tNONE)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#Antenna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Antenna - marker-ARP Up Ecc.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#float"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#markerName",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Marker name in the RINEX header (4-char/9-char id)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "GNSS obs header -  marker name",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#markerNumber",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. DOMES number",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "GNSS obs header - marker number",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#monument",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Recommended property. Station monument",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#Station"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Station -monument",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#nineCharacterID",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Mandatory property. 9-char id of the station",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#Station"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Station - nine char id",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#obsData",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Recommended property. GNSS station observation",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/dcat#Distribution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "GNSS obs data - station",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#OBSData"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#obsHeader",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Recommended property. Metadata for the RINEX header",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#OBSData"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "GNSS obs data - header",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#observer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Observer as in the RINEX header (e.g., John Smith)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "GNSS obs header - observer",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#pgm",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Info regarding the software used to generate the file as from the RINEX header",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "GNSS obs header - pgm",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#PGM"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#pgmDate",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. PGM generation date as from the RINEX header",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#PGM"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "PGM - date",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#pgmName",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Mandatory property. Name of the software used to generate the RINEX file (e.g. Spider V7.1.1.7438 )",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#PGM"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "PGM - name",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#pgmNotes",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Comment (e.g. THIS RINEX FILE IS CREATED FROM LB2 DATA)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#PGM"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "PGM - notes",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#pgmRunBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Name of the agency operating the software generating the RINEX file",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#PGM"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "PGM - operated by",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#receiver",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Recommended property. Receiver information from the RINEX header",
+        "@language": "en"
+      },
+      {
+        "@value": "Optional property. Station receiver from GeodesyML",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
+      },
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#Station"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Station -receiver",
+        "@language": "en"
+      },
+      {
+        "@value": "GNSS obs header - receiver as in OBSHeader",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#Receiver"
+      },
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Receiver"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#rinexVersion",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. \tRINEX sub-version (text e.g 3.04)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "GNSS obs header - RINEX sub-version",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#sitelog",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. URL resource for the sitelog file",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#Station"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Station - sitelog",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://schema.org/DataDownload"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#station",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Mandatory property. Station description",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#OBSData"
+      },
+      {
+        "@id": "http://www.w3.org/ns/dcat#Dataset"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "GNSS obs data - station",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#Station"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#stationDOI",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Station identifier (e.g. MAST/ADS, DataCite, DOI, EZID or W3ID)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#Station"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Station - DOI",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/ns/adms#Identifier"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/2025/gnss#temporal",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Recommended property. Temporal coverage from the RINEX header (start time/date-end time/date)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#OBSHeader"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://gnss.be/vocab/2025/gnss#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "GNSS obs header - temporal coverage",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/dc/terms/PeriodOfTime"
+      }
+    ]
+  },
+  {
+    "@id": "https://gnss.be/vocab/gnss-dcat-ap",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology",
+      "http://www.w3.org/ns/adms#Asset"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2022-02-22",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ],
+    "http://purl.org/dc/terms/creator": [
+      {
+        "@id": "http://www.gnss.be"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "The GNSS-DCAT Application aims at providing a commonly-agreed vocabulary for GNSS observation data as Open Data. GNSS-DCAT-AP defines a certain number of additions to the DCAT-AP model that can be used to describe GNSS data e.g. daily RINEX files",
+        "@language": "en"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2022-03-03",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      {
+        "@value": "2024-04-08",
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ],
+    "http://purl.org/dc/terms/publisher": [
+      {
+        "@id": "http://www.gnss.be"
+      }
+    ],
+    "http://purl.org/dc/terms/status": [
+      {
+        "@id": "http://purl.org/adms/status/UnderDevelopment"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "GNSS-DCAT-AP: an extension of the DCAT Application Profile for GNSS observation data",
+        "@language": "en"
+      }
+    ],
+    "http://purl.org/dc/terms/type": [
+      {
+        "@id": "http://purl.org/adms/assettype/Ontology"
+      }
+    ],
+    "http://purl.org/vocab/vann/preferredNamespacePrefix": [
+      {
+        "@value": "gnss"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo": [
+      {
+        "@value": "0.4.0"
+      }
+    ],
+    "http://www.w3.org/ns/adms#versionNotes": [
+      {
+        "@value": "Change log for GNSS-DCAT-AP v0.4: Aligned with DCAT-AP v.3.0.0",
+        "@language": "en"
+      },
+      {
+        "@value": "Change namespace/datatype",
+        "@language": "en"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/homepage": [
+      {
+        "@id": "https://www.fair-gnss.oma.be"
+      }
+    ]
+  },
+  {
+    "@id": "https://schema.org/DataDownload"
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be"
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna"
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#GNSSAntenna",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional class. Antenna info from GeodesyML installed on gnss:temporal (associated with gnss:Station)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Antenna from GeodesyML",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#GNSSReceiver",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional class. Receiver info from GeodesyML installed on gnss:temporal (associated with gnss:Station)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Receiver from GeodesyML",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional class.\tMonument info from GeodesyML (associated with gnss:Station)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Monument from GeodesyML",
+        "@language": "en"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Receiver"
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#alignmentFromTrueNorth",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Alignment from true north",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Antenna from GeodesyML - alignment from true north",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#double"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#antennaCableLength",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Length of the antenna cable (e.g. 70.0)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Antenna from GeodesyML - antenna cable length",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#double"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#antennaCableType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Type of cable of the antenna (e.g. CNT-400 50 Ohm)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Antenna from GeodesyML - antenna cable type",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#antennaRadomeType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Radome Type (e.g. : NONE)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Antenna from GeodesyML - antenna radome type",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#igsRadomeModelCodeType"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#antennaReferencePoint",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. ARP type (e.g. BPA)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Antenna from GeodesyML - antenna reference point",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.opengis.net/gml/3.2CodeType"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#bedrockCondition",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Bedrock conditions (e.g., FRESH)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Monument from GeodesyML - bedrock condition",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#bedrockType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Bedrock Type (e.g. SEDIMENTARY)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Monument from GeodesyML - bedrock type",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#dateInstalled",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Installation date (e.g. 2009-08-05T02:00:00Z)",
+        "@language": "en"
+      },
+      {
+        "@value": "Optional property. Receiver installation date e.g. 2020-05-01T00:00Z",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#GNSSReceiver"
+      },
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Receiver from GeodesyML - installation date",
+        "@language": "en"
+      },
+      {
+        "@value": "Antenna from GeodesyML - date installed",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.opengis.net/gml/3.2TimePositionType"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#dateRemoved",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Receiver removal date e.g.2021-04-11T12:00Z",
+        "@language": "en"
+      },
+      {
+        "@value": "Optional property. Removal date (e.g. 2010-05-03T01:30:00Z)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#GNSSReceiver"
+      },
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Receiver from GeodesyML - removal date",
+        "@language": "en"
+      },
+      {
+        "@value": "Antenna from GeodesyML - igsModelCode",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.opengis.net/gml/3.2TimePositionType"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#description",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Site description",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Monument from GeodesyML - site description",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#elevationCutoffSetting",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Elevation cut off settings (e.g. 0)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#GNSSReceiver"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Receiver from GeodesyML - elevation cutoff setting",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#double"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#firmwareVersion",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Recommended property. Firmware version (e.g. 5.37)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#GNSSReceiver"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Receiver from GeodesyML - firmware version",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#foundation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Monument foundation (e.g. CONCRETE BLOCK)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Monument from GeodesyML - monument foundation",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.opengis.net/gml/3.2CodeType"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#foundationDepth",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Depth of monument foundation (e.g. : 3 m)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Monument from GeodesyML - monument foundation depth",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#double"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#fractureSpacing",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Fracture spacing (e.g. 0 cm)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Monument from GeodesyML - fracture spacing",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#double"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#geologicCharacteristic",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Geologic characteristic (e.g. SAND)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Monument from GeodesyML - geologic characteristic",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#height",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Height of the monument (e.g. 8 m)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Monument from GeodesyML - monument height",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#double"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#igsModelCode",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Mandatory property. Receiver name (e.g.TRIMBLE NETR9)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#GNSSReceiver"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Receiver from GeodesyML - name",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#igsRadomeModelCodeType"
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#installedDate",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Recommended property. Station installation date (e.g. 2002-09-15Z)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Monument from GeodesyML - installed date",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.opengis.net/gml/3.2TimePositionType"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#manufacturerSerialNumber",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Serial number for the antenna (e.g. 103320)",
+        "@language": "en"
+      },
+      {
+        "@value": "Optional property. Serial number for the receiver (e.g. 5608R50231)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna"
+      },
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#GNSSReceiver"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Antenna from GeodesyML - manufacturer serial number",
+        "@language": "en"
+      },
+      {
+        "@value": "Receiver from GeodesyML - manufacturer serial number",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#marker-arpEastEcc",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Recommended property. Distance from the ARP to the marker - East component",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Antenna from GeodesyML - marker-ARP East Ecc.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#float"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#marker-arpNorthEcc",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Recommended property. Distance from the ARP to the marker - North component",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Antenna from GeodesyML - marker-ARP North Ecc.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#float"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#marker-arpUptEcc",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Recommended property. Distance from the ARP to the marker - Up component",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Antenna from GeodesyML - marker-ARP Up Ecc.",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#float"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#markerDescription",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Marker description (e.g. CENTER OF HOLE IN STEEL PLATE)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Monument from GeodesyML - marker description",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.opengis.net/gml/3.2TimePositionType"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#monumentDescription",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Monument description (e.g. STEEL MAST)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Monument from GeodesyML - monument description",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#name",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Mandatory property. GNSS site names, (e.g. 4-char id, site-name, iers-DOMES, cdp-number)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Monument from GeodesyML - site name",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.opengis.net/gml/3.2CodeType"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#notes",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Additional information",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Monument from GeodesyML - notes",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#radomeSerialNumber",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Serial number of the radome (e.g. N/A)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Antenna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Antenna from GeodesyML - radome serial number",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#satelliteSystem",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Satellite system (e.g GPS+GLO+GAL)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#GNSSReceiver"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Receiver from GeodesyML - satellite system",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.opengis.net/gml/3.2CodeType"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#type",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "Optional property. Monument type (e.g. CORS)",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#Monument"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://www.fair-gnss.oma.be/gnss-dcat-ap/vocabulary/geo#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Monument from GeodesyML - monument type",
+        "@language": "en"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.geo.be/gnss-dcat-ap/vocabulary/gnss#"
+  }
+]

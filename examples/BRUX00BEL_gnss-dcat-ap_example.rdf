@@ -66,4 +66,77 @@
         <ns1:temporal rdf:resource="https://epncb.oma.be/PID/2023/244/BRUX00BEL_2023244_01D_30S_RNone#temporal"/>
     </ns1:Distribution>
 
+</rdf:RDF><?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ns0="https://w3id.org/gnss-dcat-ap/gnss#"
+         xmlns:ns1="https://www.w3.org/ns/dcat#"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:ns2="http://www.w3.org/ns/adms#"
+         xmlns:ns3="https://gnss.be/vocab/2023/gnss#">
+
+  <rdf:Description rdf:about="https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#antenna">
+    <ns0:igsModelCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JAVRINGANT_DM   SCIS</ns0:igsModelCode>
+    <ns0:marker-arpEastEcc rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</ns0:marker-arpEastEcc>
+    <ns0:marker-arpNorthEcc rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.001</ns0:marker-arpNorthEcc>
+    <ns0:marker-arpUpEcc rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4689</ns0:marker-arpUpEcc>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#obsheader">
+    <ns0:antenna rdf:resource="https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#antenna"/>
+    <ns0:interval rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">30</ns0:interval>
+    <ns0:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-01T00:00:00</ns0:issued>
+    <ns0:markerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BRUX00BEL</ns0:markerName>
+    <ns0:receiver>
+      <rdf:Description rdf:about="https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#receiver">
+        <ns0:firmware_version rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.5.0</ns0:firmware_version>
+        <ns0:igsModelCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SEPT POLARX5TR</ns0:igsModelCode>
+      </rdf:Description>
+    </ns0:receiver>
+
+    <ns0:rinexVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.04</ns0:rinexVersion>
+    <ns0:temporal rdf:resource="https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#temporal"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#temporal">
+    <rdf:type rdf:resource="https://www.w3.org/ns/dcat#PeriodOfTime"/>
+    <ns1:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-01T23:59:30</ns1:endDate>
+    <ns1:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-01T00:00:00</ns1:startDate>
+  </rdf:Description>
+
+  <ns1:Distribution rdf:about="https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3">
+    <dc:checksum>
+      <dc:Checksum rdf:about="https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#checksum">
+        <dc:checksumAlgorithm rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MD5</dc:checksumAlgorithm>
+        <dc:checksumValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0a2eae25971122aa9dad16b1b2d5d8a7</dc:checksumValue>
+      </dc:Checksum>
+    </dc:checksum>
+
+    <dc:conformsTo rdf:resource="https://gnss.be/PID/standard#hatanaka"/>
+    <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daily RINEX data of the GNSS station BRUX00BEL for DOY 244 of 2023</dc:description>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-01T00:00:00</dc:issued>
+    <dc:license rdf:resource="https://w3id.org/EUREF-HDC/BRUX00BEL#license"/>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-08T04:42:16</dc:modified>
+    <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BRUX00BEL_R_20232440000_01D_30S_MO.crx.gz</dc:title>
+    <owl:versionIRI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://gnss.be/vocab/2025/gnss#</owl:versionIRI>
+    <ns2:status rdf:resource="https://publications.europa.eu/resource/authority/distribution-status/COMPLETED"/>
+    <ns0:obsData>
+      <ns0:OBSData rdf:about="https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#obsdata">
+        <ns3:format rdf:resource="https://gnss.be/PID/standard/RINEX"/>
+        <ns0:compressFormat rdf:resource="https://gnss.be/PID/standard/hatanaka"/>
+        <ns0:frequency rdf:resource="http://purl.org/cld/freq/daily"/>
+        <ns0:obsHeader rdf:resource="https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#obsheader"/>
+        <ns0:station rdf:resource="https://w3id.org/EUREF-HDC/BRUX00BEL#station"/>
+      </ns0:OBSData>
+    </ns0:obsData>
+
+    <ns1:accessURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://epncb.oma.be/pub/RINEX/2023/244/BRUX00BEL_R_20232440000_01D_30S_MO.crx.gz</ns1:accessURL>
+    <ns1:compressFormat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/x-gzip</ns1:compressFormat>
+    <ns1:dataset rdf:resource="https://w3id.org/EUREF-HDC/BRUX00BEL"/>
+    <ns1:downloadURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://epncb.oma.be/pub/RINEX/2023/244/BRUX00BEL_R_20232440000_01D_30S_MO.crx.gz</ns1:downloadURL>
+    <ns1:mediaType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">application/octet-stream</ns1:mediaType>
+    <ns1:temporal rdf:resource="https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#temporal"/>
+    <ns1:version rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GNSS-DCAT-AP v2025 - API V2.x</ns1:version>
+  </ns1:Distribution>
+
 </rdf:RDF>
