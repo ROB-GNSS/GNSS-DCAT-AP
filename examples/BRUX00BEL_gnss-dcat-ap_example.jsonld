@@ -25,19 +25,15 @@
   },
   "@graph": [
     {
-      "@id": "https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#antenna",
-      "gnss:igsModelCode": "JAVRINGANT_DM   SCIS",
-      "gnss:marker-arpEastEcc": {
-        "@type": "xsd:float",
-        "@value": "0.0"
+      "@id": "https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#temporal",
+      "@type": "PeriodOfTime",
+      "endDate": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-09-01T23:59:30"
       },
-      "gnss:marker-arpNorthEcc": {
-        "@type": "xsd:float",
-        "@value": "0.001"
-      },
-      "gnss:marker-arpUpEcc": {
-        "@type": "xsd:float",
-        "@value": "0.4689"
+      "startDate": {
+        "@type": "xsd:dateTime",
+        "@value": "2023-09-01T00:00:00"
       }
     },
     {
@@ -110,30 +106,7 @@
       "temporal": {
         "@id": "https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#temporal"
       },
-      "version": "GNSS-DCAT-AP v2025 - API V2.x"
-    },
-    {
-      "@id": "https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#temporal",
-      "@type": "PeriodOfTime",
-      "endDate": {
-        "@type": "xsd:dateTime",
-        "@value": "2023-09-01T23:59:30"
-      },
-      "startDate": {
-        "@type": "xsd:dateTime",
-        "@value": "2023-09-01T00:00:00"
-      }
-    },
-    {
-      "@id": "https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#checksum",
-      "@type": "dct:Checksum",
-      "dct:checksumAlgorithm": "MD5",
-      "dct:checksumValue": "0a2eae25971122aa9dad16b1b2d5d8a7"
-    },
-    {
-      "@id": "https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#receiver",
-      "gnss:firmware_version": "5.5.0",
-      "gnss:igsModelCode": "SEPT POLARX5TR"
+      "version": "GNSS-DCAT-AP v2025 - API v1.x"
     },
     {
       "@id": "https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#obsdata",
@@ -153,6 +126,33 @@
       "https://gnss.be/vocab/2023/gnss#format": {
         "@id": "https://gnss.be/PID/standard/RINEX"
       }
+    },
+    {
+      "@id": "https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#checksum",
+      "@type": "dct:Checksum",
+      "dct:checksumAlgorithm": "MD5",
+      "dct:checksumValue": "0a2eae25971122aa9dad16b1b2d5d8a7"
+    },
+    {
+      "@id": "https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#antenna",
+      "gnss:igsModelCode": "JAVRINGANT_DM   SCIS",
+      "gnss:marker-arpEastEcc": {
+        "@type": "xsd:float",
+        "@value": "0.0"
+      },
+      "gnss:marker-arpNorthEcc": {
+        "@type": "xsd:float",
+        "@value": "0.001"
+      },
+      "gnss:marker-arpUpEcc": {
+        "@type": "xsd:float",
+        "@value": "0.4689"
+      }
+    },
+    {
+      "@id": "https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#receiver",
+      "gnss:firmware_version": "5.5.0",
+      "gnss:igsModelCode": "SEPT POLARX5TR"
     }
   ]
 }

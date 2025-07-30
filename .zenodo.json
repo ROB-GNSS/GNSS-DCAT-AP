@@ -1,10 +1,10 @@
 {
-    "description": "Proposal for a DCAT-AP extension for GNSS observation data",
+    "description": "DCAT-AP extension for GNSS observation data",
     "license": "other-open",
-    "title": "ROB-GNSS/GNSS-DCAT-AP: V0.3",
-    "version": "V0.3",
+    "title": "ROB-GNSS/GNSS-DCAT-AP: V0.4",
+    "version": "V0.4",
     "upload_type": "software",
-    "publication_date": "2024-04-08",
+    "publication_date": "2025-07-29",
     "creators": [
         {
             "affiliation": "Royal Observatory of Belgium",
@@ -18,7 +18,7 @@
         }
         {
             "affiliation": "Royal Observatory of Belgium",
-            "orcid": "",
+            "orcid": "0000-0002-9855-0494",
             "name": "Fabian, Andras"
         }
         {
@@ -28,7 +28,7 @@
         }
         {
             "affiliation": "Royal Observatory of Belgium",
-            "orcid": "",
+            "orcid": "0000-0001-7316-4952",
             "name": "Miglio, Anna"
         }
         {

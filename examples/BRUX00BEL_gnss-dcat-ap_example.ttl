@@ -1,37 +1,37 @@
-@prefix ns0: <https://w3id.org/gnss-dcat-ap/gnss#> .
+@prefix ns0: <https://www.w3.org/ns/dcat#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix ns1: <https://www.w3.org/ns/dcat#> .
+@prefix ns1: <https://w3id.org/gnss-dcat-ap/gnss#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix ns2: <http://www.w3.org/ns/adms#> .
 @prefix ns3: <https://gnss.be/vocab/2023/gnss#> .
 
-<https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#antenna>
-  ns0:igsModelCode "JAVRINGANT_DM   SCIS"^^xsd:string ;
-  ns0:marker-arpEastEcc "0.0"^^xsd:float ;
-  ns0:marker-arpNorthEcc "0.001"^^xsd:float ;
-  ns0:marker-arpUpEcc "0.4689"^^xsd:float .
-
-<https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#obsheader>
-  ns0:antenna <https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#antenna> ;
-  ns0:interval "30"^^xsd:nonNegativeInteger ;
-  ns0:issued "2023-09-01T00:00:00"^^xsd:dateTime ;
-  ns0:markerName "BRUX00BEL"^^xsd:string ;
-  ns0:receiver <https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#receiver> ;
-  ns0:rinexVersion "3.04"^^xsd:string ;
-  ns0:temporal <https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#temporal> .
-
-<https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#receiver>
-  ns0:firmware_version "5.5.0"^^xsd:string ;
-  ns0:igsModelCode "SEPT POLARX5TR"^^xsd:string .
-
 <https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#temporal>
   a <https://www.w3.org/ns/dcat#PeriodOfTime> ;
-  ns1:endDate "2023-09-01T23:59:30"^^xsd:dateTime ;
-  ns1:startDate "2023-09-01T00:00:00"^^xsd:dateTime .
+  ns0:endDate "2023-09-01T23:59:30"^^xsd:dateTime ;
+  ns0:startDate "2023-09-01T00:00:00"^^xsd:dateTime .
+
+<https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#obsheader>
+  ns1:antenna <https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#antenna> ;
+  ns1:interval "30"^^xsd:nonNegativeInteger ;
+  ns1:issued "2023-09-01T00:00:00"^^xsd:dateTime ;
+  ns1:markerName "BRUX00BEL"^^xsd:string ;
+  ns1:receiver <https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#receiver> ;
+  ns1:rinexVersion "3.04"^^xsd:string ;
+  ns1:temporal <https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#temporal> .
+
+<https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#antenna>
+  ns1:igsModelCode "JAVRINGANT_DM   SCIS"^^xsd:string ;
+  ns1:marker-arpEastEcc "0.0"^^xsd:float ;
+  ns1:marker-arpNorthEcc "0.001"^^xsd:float ;
+  ns1:marker-arpUpEcc "0.4689"^^xsd:float .
+
+<https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#receiver>
+  ns1:firmware_version "5.5.0"^^xsd:string ;
+  ns1:igsModelCode "SEPT POLARX5TR"^^xsd:string .
 
 <https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3>
-  a ns1:Distribution ;
+  a ns0:Distribution ;
   dc:checksum <https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#checksum> ;
   dc:conformsTo <https://gnss.be/PID/standard#hatanaka> ;
   dc:description "Daily RINEX data of the GNSS station BRUX00BEL for DOY 244 of 2023"^^xsd:string ;
@@ -41,14 +41,14 @@
   dc:title "BRUX00BEL_R_20232440000_01D_30S_MO.crx.gz"^^xsd:string ;
   owl:versionIRI "https://gnss.be/vocab/2025/gnss#"^^xsd:anyURI ;
   ns2:status <https://publications.europa.eu/resource/authority/distribution-status/COMPLETED> ;
-  ns0:obsData <https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#obsdata> ;
-  ns1:accessURL "https://epncb.oma.be/pub/RINEX/2023/244/BRUX00BEL_R_20232440000_01D_30S_MO.crx.gz"^^xsd:anyURI ;
-  ns1:compressFormat "application/x-gzip"^^xsd:string ;
-  ns1:dataset <https://w3id.org/EUREF-HDC/BRUX00BEL> ;
-  ns1:downloadURL "https://epncb.oma.be/pub/RINEX/2023/244/BRUX00BEL_R_20232440000_01D_30S_MO.crx.gz"^^xsd:anyURI ;
-  ns1:mediaType "application/octet-stream"^^xsd:string ;
-  ns1:temporal <https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#temporal> ;
-  ns1:version "GNSS-DCAT-AP v2025 - API V2.x"^^xsd:string .
+  ns1:obsData <https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#obsdata> ;
+  ns0:accessURL "https://epncb.oma.be/pub/RINEX/2023/244/BRUX00BEL_R_20232440000_01D_30S_MO.crx.gz"^^xsd:anyURI ;
+  ns0:compressFormat "application/x-gzip"^^xsd:string ;
+  ns0:dataset <https://w3id.org/EUREF-HDC/BRUX00BEL> ;
+  ns0:downloadURL "https://epncb.oma.be/pub/RINEX/2023/244/BRUX00BEL_R_20232440000_01D_30S_MO.crx.gz"^^xsd:anyURI ;
+  ns0:mediaType "application/octet-stream"^^xsd:string ;
+  ns0:temporal <https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#temporal> ;
+  ns0:version "GNSS-DCAT-AP v2025 - API v1.x"^^xsd:string .
 
 <https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#checksum>
   a dc:Checksum ;
@@ -56,9 +56,9 @@
   dc:checksumValue "0a2eae25971122aa9dad16b1b2d5d8a7"^^xsd:string .
 
 <https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#obsdata>
-  a ns0:OBSData ;
+  a ns1:OBSData ;
   ns3:format <https://gnss.be/PID/standard/RINEX> ;
-  ns0:compressFormat <https://gnss.be/PID/standard/hatanaka> ;
-  ns0:frequency <http://purl.org/cld/freq/daily> ;
-  ns0:obsHeader <https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#obsheader> ;
-  ns0:station <https://w3id.org/EUREF-HDC/BRUX00BEL#station> .
+  ns1:compressFormat <https://gnss.be/PID/standard/hatanaka> ;
+  ns1:frequency <http://purl.org/cld/freq/daily> ;
+  ns1:obsHeader <https://w3id.org/EUREF-HDC/2023/244/BRUX00BEL_2023244_01D_30S_R3#obsheader> ;
+  ns1:station <https://w3id.org/EUREF-HDC/BRUX00BEL#station> .
