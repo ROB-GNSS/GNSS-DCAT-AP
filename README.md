@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10955559.svg)](https://doi.org/10.5281/zenodo.10955559)
 
-Draft of a DCAT-AP extension for GNSS observation data (GNSS-DCAT-AP) to facilitate GNSS data exchange. This proposal aims at facilitating the exchange of GNSS RINEX observation data in order to increase their Findability, Accessibility, Interoperability, and Re-usability (FAIR).
+A DCAT-AP extension for GNSS observation data (GNSS-DCAT-AP) to facilitate GNSS data exchange. In particular, this metadata application profile aims at facilitating the exchange of GNSS RINEX observation data in order to increase their Findability, Accessibility, Interoperability, and Re-usability (FAIR).
 
 GNSS-DCAT-AP adds additional support for the following entities:
 * GNSS observation data file (RINEX) and its header
@@ -13,5 +13,5 @@ GNSS-DCAT-AP adds additional support for the following entities:
 
 GNSS-DCAT-AP is currently used for the metadata attached to daily RINEX files accessible via [https://gnss.be/opendataportal/](https://gnss.be/opendataportal/) and its RESTful API.
 
- *A Simplified UML Class Diagram of the GNSS-DCAT-AP model. It extends DCAT-AP 2.1.0 introducing additional classes (**in blue**) and relationships*
- ![Simplified GNSS-DCAT-AP class diagram](Draft/gnss-dcat-ap_v0.4.png)
+ *A simplified ULM class diagram providing a partial view of GNSS-DCAT-AP, which extends DCAT-AP 2.1.0 by adding new classes (**in blue**) and properties. Only the GNSS-DCAT-AP classes populated so far are shown.*
+ ![Simplified GNSS-DCAT-AP class diagram](Draft/gnss-dcat-ap_v0.4_simple.png)
